@@ -27,7 +27,7 @@ function GinCocktails() {
             (console.log("yum", ginCocktail))
             return <Cocktail
               key={ginCocktail.idDrink}
-              // id={cocktail.idDrink}
+              id={ginCocktail.idDrink}
               name={ginCocktail.strDrink}
               images={ginCocktail.strDrinkThumb} 
               ingredients={ginCocktail.ingredients}

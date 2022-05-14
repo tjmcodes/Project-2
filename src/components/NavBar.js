@@ -12,7 +12,7 @@ function Navbar() {
             <Link to="cocktails" className="navbar-item">
                 List of Cocktails
             </Link>
-            <Link to="gin" className="navbar-item">
+            {/* <Link to="gin" className="navbar-item">
                 Gin
             </Link>
             <Link to="rum" className="navbar-item">
@@ -20,9 +20,9 @@ function Navbar() {
             </Link>
             <Link to="vodka" className="navbar-item">
                 Vodka
-            </Link>
+            </Link> */}
             <Link to="cocktail/gin" className="navbar-item">
-                More Information on Selected Cocktail
+                Recipes
             </Link>
 
 

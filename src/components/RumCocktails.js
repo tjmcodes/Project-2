@@ -24,7 +24,7 @@ function RumCocktails() {
             (console.log("yum", rumCocktail))
             return <Cocktail
               key={rumCocktail.idDrink}
-              // id={cocktail.idDrink}
+              id={rumCocktail.idDrink}
               name={rumCocktail.strDrink}
               images={rumCocktail.strDrinkThumb} 
               ingredients={rumCocktail.ingredients}

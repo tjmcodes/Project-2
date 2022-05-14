@@ -1,3 +1,4 @@
+
 body, .navbar-item {
   padding: 10px;
   text-align: center;
@@ -7,3 +8,5 @@ body, .navbar-item {
   display: flex;
   flex-wrap: wrap;
 }
+
+@import "~bulma/bulma.sass";

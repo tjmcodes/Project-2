@@ -17,23 +17,25 @@ function VodkaCocktails() {
 
   }, [])
 
-  return <div className="cocktails">
+  return <main>
+    <div className="container">
+      <div className="cocktails">
 
-    {vodkaCocktails ?
-      vodkaCocktails.drinks.map((cocktail) => {
-        (console.log("yum", cocktail.strDrink))
-        return <Cocktail
-          key={cocktail.idDrink}
-          name={cocktail.strDrink}
-          images={cocktail.strDrinkThumb} 
-          ingredients={cocktail.ingredients}
-        />
-
-
-      }) : <p>Loading cocktails...</p>
-
-    }
-  </div>
+        {vodkaCocktails ?
+          vodkaCocktails.drinks.map((cocktail) => {
+            // (console.log("yum", cocktail.strDrink))
+            return <Cocktail
+              key={cocktail.idDrink}
+              name={cocktail.strDrink}
+              images={cocktail.strDrinkThumb}
+              id={cocktail.idDrink} 
+              ingredients={cocktail.ingredients}
+            /> 
+          }) : <p>Loading cocktails...</p>
+        }
+      </div>
+    </div>
+  </main>
 }
 
 export default VodkaCocktails
