@@ -5,7 +5,7 @@ import Cocktail from "./Cocktail"
 function CocktailsList() {
 
   const [cocktails, setCocktails] = React.useState(undefined)
-  const [selectedOptions, setSelectedOptions] = React.useState('All')
+  const [selectedOptions, setSelectedOptions] = React.useState("All")
 
   React.useEffect(() => {
     async function fetchCocktails() {
