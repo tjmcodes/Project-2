@@ -22,6 +22,7 @@ function App() {
       <Routes>
         <Route path="cocktails/" element={<CocktailsList />} />
         <Route path="cocktail/:cocktailName" element={<ShowCocktail />} />
+        <Route path="rum" element={<RumCocktails />}/>
       </Routes>
     </Router>
   </>
