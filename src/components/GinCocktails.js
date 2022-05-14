@@ -5,6 +5,7 @@ function GinCocktails() {
   const [bramble, setBramble] = React.useState(undefined);
   const [dryMartini, setDryMartini] = React.useState(undefined);
   const [gimlet, setGimlet] = React.useState(undefined);
+  const [negroni, setNegroni] = React.useState(undefined);
   
   React.useEffect(() => {
     async function fetchCocktails() {
@@ -27,6 +28,16 @@ function GinCocktails() {
       setGimlet(data);
     }
     fetchGimlet();
+  }, []);
+
+  React.useEffect(() => {
+    async function fetchNegroni() {
+      const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=negroni");
+      const data = await resp.json();
+      console.log(data);
+      setNegroni(data);
+    }
+    fetchNegroni();
   }, []);
 
   React.useEffect(() => {
@@ -60,6 +71,15 @@ function GinCocktails() {
               id={gimlet.drinks[0].idDrink}
               name={gimlet.drinks[0].strDrink}
               images={gimlet.drinks[0].strDrinkThumb}
+            />
+          ) : (
+            <p>Loading cocktails...</p>
+          )}
+          {negroni ? (
+            <Cocktail
+              id={negroni.drinks[0].idDrink}
+              name={negroni.drinks[0].strDrink}
+              images={negroni.drinks[0].strDrinkThumb}
             />
           ) : (
             <p>Loading cocktails...</p>
