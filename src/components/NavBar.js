@@ -15,6 +15,12 @@ function Navbar() {
             <Link to="gin" className="navbar-item">
                 Gin
             </Link>
+            <Link to="rum" className="navbar-item">
+                Rum
+            </Link>
+            <Link to="vodka" className="navbar-item">
+                Vodka
+            </Link>
             <Link to="cocktail/gin" className="navbar-item">
                 More Information on Selected Cocktail
             </Link>
@@ -22,9 +28,6 @@ function Navbar() {
 
 
 
-            <Link to="rum" className="navbar-item">
-                Rum
-            </Link>
           </div>
         </div>
       </nav>

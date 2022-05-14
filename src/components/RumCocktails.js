@@ -16,8 +16,6 @@ function RumCocktails() {
   }, []
   )
   return <main>
-    <h1> 🍸 Cocktail Party App 🍸 </h1>
-
     <div className="container">
       <div className="cocktails">
 

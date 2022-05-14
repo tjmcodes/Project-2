@@ -8,11 +8,8 @@ function GinCocktails() {
 
   React.useEffect(() => {
     async function fetchCocktails() {
-      const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin")
-    
-      
+      const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin")     
       const data = await resp.json()
-    
       console.log(data)
       setGinCocktails(data)
     }
@@ -22,9 +19,7 @@ function GinCocktails() {
 
 
 
-  return <main>
-    <h1> 🍸 Cocktail Party App 🍸 </h1>
-    
+  return <main>    
     <div className="container">
       <div className="cocktails">
         {ginCocktails ?
