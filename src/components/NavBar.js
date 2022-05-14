@@ -17,6 +17,13 @@ function Navbar() {
             <Link to="cocktail/gin" className="navbar-item">
                 More Information on Selected Cocktail
             </Link>
+
+
+
+
+            <Link to="rum" className="navbar-item">
+                Rum
+            </Link>
           </div>
         </div>
       </nav>

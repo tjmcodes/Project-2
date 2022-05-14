@@ -6,6 +6,10 @@ import Navbar from "./components/NavBar"
 import ShowCocktail from "./components/ShowCocktail"
 import CocktailsList from "./components/CocktailsList"
 
+
+import RumCocktails from "./components/RumCocktails"
+
+
 function App() {
   // ! 1) You need a router. You'll pretty always use BrowserRouter
   // ! 2) You make a Routes component inside.
