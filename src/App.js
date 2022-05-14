@@ -8,6 +8,8 @@ import CocktailsList from "./components/CocktailsList"
 import GinCocktails from "./components/GinCocktails"
 import RumCocktails from "./components/RumCocktails"
 import VodkaCocktails from "./components/VodkaCocktails"
+import TequilaCocktails from "./components/VodkaCocktails"
+import AllGinCocktails from "./components/AllGinCocktails"
 
 
 function App() {
@@ -23,8 +25,10 @@ function App() {
         <Route path="cocktails/" element={<CocktailsList />} />
         <Route path="cocktail/:cocktailName" element={<ShowCocktail />} />
         <Route path="gin" element={<GinCocktails />} />
+        <Route path="allgin" element={<AllGinCocktails />} />
         <Route path="rum" element={<RumCocktails />}/>
         <Route path="vodka" element={<VodkaCocktails />}/>
+        <Route path="tequila" element={<TequilaCocktails />}/>
 
       </Routes>
     </Router>
