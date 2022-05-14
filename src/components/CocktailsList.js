@@ -20,7 +20,7 @@ function CocktailsList() {
     
     <h1>Vodka</h1>
     <VodkaCocktails />
-    <Link to="/vodka cocktails">{"⬅ Show all Vodka cocktails"}</Link>
+    <Link to="/allvodka">{"⬅ Show all Vodka cocktails"}</Link>
     
     <h1>Tequila</h1>
     <TequilaCocktails />

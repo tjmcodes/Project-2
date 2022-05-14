@@ -10,8 +10,8 @@ import RumCocktails from "./components/RumCocktails"
 import VodkaCocktails from "./components/VodkaCocktails"
 import TequilaCocktails from "./components/VodkaCocktails"
 import AllGinCocktails from "./components/AllGinCocktails"
+import AllVodkaCocktails from "./components/AllVodkaCocktails"
 import AllTequilaCocktails from "./components/AllTequilaCocktails"
-
 
 function App() {
   // ! 1) You need a router. You'll pretty always use BrowserRouter
@@ -29,6 +29,7 @@ function App() {
         <Route path="allgin" element={<AllGinCocktails />} />
         <Route path="rum" element={<RumCocktails />}/>
         <Route path="vodka" element={<VodkaCocktails />}/>
+        <Route path="allvodka" element={<AllVodkaCocktails />} />
         <Route path="tequila" element={<TequilaCocktails />}/>
         <Route path="alltequila" element={<AllTequilaCocktails />}/>
 
