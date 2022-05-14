@@ -40,7 +40,7 @@ function ShowCocktail() {
               <div className="column is-half">
                 <h4 className="title is-4">
                   <span role="img" aria-label="plate">
-                    🍽
+                    🍹
                   </span>{" "}
                   Ingredients
                 </h4>
@@ -53,7 +53,7 @@ function ShowCocktail() {
                 <hr />
                 <h4 className="title is-4">
                   <span role="img" aria-label="globe">
-                    🌍
+                    🗒
                   </span>{" "}
                   Instructions
                 </h4>

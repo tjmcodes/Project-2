@@ -2,6 +2,7 @@
 body, .navbar-item {
   padding: 10px;
   text-align: center;
+  font-family: 'Josefin Slab', serif;
 }
 
 .cocktails {
@@ -9,8 +10,16 @@ body, .navbar-item {
   flex-wrap: wrap;
 }
 
-.demo-carousel {
-  
-}
 
 @import "~bulma/bulma.sass";
+
+h1{
+  font-size: 50px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  font-family: 'Josefin Slab', serif;
+  max-width: 100%;
+  margin: 30px;
+
+}

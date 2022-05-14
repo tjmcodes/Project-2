@@ -11,7 +11,7 @@ function Cocktail({ name, id, images }) {
           </div>
           <div className="card-image">
             <figure className="image">
-              <img src={images} alt={name} style={{ maxWidth: 300 }} />
+              <img src={images} alt={name} style={{ maxWidth: 400 }} />
             </figure>
           </div>
         </div>

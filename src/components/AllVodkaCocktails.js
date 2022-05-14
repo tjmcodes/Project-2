@@ -37,8 +37,6 @@ function AllVodkaCocktails() {
     
       </div>
     </div>
-
-
   </main>
 
 }
