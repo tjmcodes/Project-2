@@ -6,6 +6,8 @@ import Navbar from "./components/NavBar"
 import ShowCocktail from "./components/ShowCocktail"
 import CocktailsList from "./components/CocktailsList"
 
+import GinCocktails from "./components/GinCocktails"
+
 function App() {
   // ! 1) You need a router. You'll pretty always use BrowserRouter
   // ! 2) You make a Routes component inside.
@@ -16,6 +18,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
+        <Route path="gin" element={<GinCocktails />} />
         <Route path="cocktails/" element={<CocktailsList />} />
         <Route path="cocktail/:cocktailName" element={<ShowCocktail />} />
       </Routes>
