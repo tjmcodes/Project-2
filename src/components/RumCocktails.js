@@ -7,7 +7,7 @@ function RumCocktails() {
 
   React.useEffect(() => {
     async function fetchRumCocktails() {
-      const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Rum")
+      const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Rum")
       const data = await resp.json()
       console.log(data)
       setRumCocktails(data)
@@ -17,7 +17,7 @@ function RumCocktails() {
   )
   return <main>
     <h1> 🍸 Cocktail Party App 🍸 </h1>
-    
+
     <div className="container">
       <div className="cocktails">
 
