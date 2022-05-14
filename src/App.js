@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Navbar from "./components/NavBar"
 import ShowCocktail from "./components/ShowCocktail"
 import CocktailsList from "./components/CocktailsList"
+import Vodka from "./components/VodkaCocktails"
 
 function App() {
   // ! 1) You need a router. You'll pretty always use BrowserRouter
