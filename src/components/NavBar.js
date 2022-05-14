@@ -2,8 +2,6 @@
 import { Link } from "react-router-dom"
 import React from "react"
 
-
-
 // ! The one difference in this navigation, are the Link components.
 function Navbar() {
   return (
@@ -13,6 +11,9 @@ function Navbar() {
           <div className="navbar-brand">
             <Link to="cocktails" className="navbar-item">
                 List of Cocktails
+            </Link>
+            <Link to="gin" className="navbar-item">
+                Gin
             </Link>
             <Link to="cocktail/gin" className="navbar-item">
                 More Information on Selected Cocktail

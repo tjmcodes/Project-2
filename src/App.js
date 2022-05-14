@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Navbar from "./components/NavBar"
 import ShowCocktail from "./components/ShowCocktail"
 import CocktailsList from "./components/CocktailsList"
+import Vodka from "./components/VodkaCocktails"
+
+import GinCocktails from "./components/GinCocktails"
 
 
 import RumCocktails from "./components/RumCocktails"
@@ -20,6 +23,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
+        <Route path="gin" element={<GinCocktails />} />
         <Route path="cocktails/" element={<CocktailsList />} />
         <Route path="cocktail/:cocktailName" element={<ShowCocktail />} />
         <Route path="rum" element={<RumCocktails />}/>
