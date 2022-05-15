@@ -13,7 +13,7 @@ function CocktailsList() {
 
     <h1>Rum</h1>
     <RumCocktails />
-    <Link to="/rum cocktails">{"Show all the Rum cocktails"}</Link>
+    <button className="button is-link is-light"><Link to="/allrum">{"Show all the Rum cocktails"}</Link></button>
     
     <h1>Vodka</h1>
     <VodkaCocktails />

@@ -8,7 +8,7 @@ function GinCocktails() {
   const [negroni, setNegroni] = React.useState(undefined);
   
   React.useEffect(() => {
-    async function fetchCocktails() {
+    async function fetchBramble() {
       const resp = await fetch(
         "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=bramble"
       );
@@ -16,7 +16,7 @@ function GinCocktails() {
       console.log(data);
       setBramble(data);
     }
-    fetchCocktails();
+    fetchBramble();
   }, []);
 
   React.useEffect(() => {

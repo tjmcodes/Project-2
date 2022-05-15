@@ -21,7 +21,7 @@ function Navbar() {
             <Link to="vodka" className="navbar-item">
                 Vodka
             </Link> */}
-            <Link to="cocktail/gin" className="navbar-item">
+            <Link to="cocktail/id" className="navbar-item">
                 Recipes
             </Link>
 
