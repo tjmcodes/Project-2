@@ -7,7 +7,7 @@ function Cocktail({ name, id, images }) {
       <Link to={`/cocktail/${id}`}>
         <div className="card">
           <div className="card-header">
-            <h3 className="card-header-title">{name}</h3>
+            <h3 className="card-header-title title-color">{name}</h3>
           </div>
           <div className="card-image">
             <figure className="image">

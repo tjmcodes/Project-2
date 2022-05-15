@@ -2,7 +2,6 @@
 body, .navbar-item {
   padding: 10px;
   text-align: center;
-  font-family: 'Josefin Slab', serif;
 }
 
 .cocktails {
@@ -11,6 +10,8 @@ body, .navbar-item {
 }
 
 $pink: #ffb4a2;
+$title-color: #b5838d;
+$card-header-title: 'Josefin Slab', serif;
 $footer-background-color: #363636;
 $footer-padding: 2rem 1.5rem;
 $card-header-background-color: $pink;
@@ -20,13 +21,11 @@ $box-padding: 1rem;
 @import "~bulma/bulma.sass";
 
 h1{
-  font-size: 50px;
+  font-size: 40px;
   display: flex;
   align-items: stretch;
   flex-direction: column;
-  font-family: 'Josefin Slab', serif;
   color: #6d6875;
   max-width: 100%;
-  margin: 30px;
 
 }

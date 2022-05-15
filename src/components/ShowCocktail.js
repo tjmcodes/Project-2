@@ -29,17 +29,17 @@ function ShowCocktail() {
       <div className="container">
         {cocktail ? (
           <div>
-            <h2 className="title has-text-centered">{cocktail.drinks[0].strDrink}</h2>
+            <h2 className="title has-text-centered">{cocktail.drinks[0].strDrink} Recipe</h2>
             <hr />
             <div className="columns">
               <div className="column is-half">
                 <figure className="image">
-                  <img src={cocktail.drinks[0].strDrinkThumb} alt={cocktail.drinks[0].strDrink} />
+                  <img src={cocktail.drinks[0].strDrinkThumb} alt={cocktail.drinks[0].strDrink} style={{ maxWidth: 600 }}/>
                 </figure>
               </div>
               <div className="column is-half">
                 <h4 className="title is-4">
-                  <span role="img" aria-label="plate">
+                  <span role="img" aria-label="cocktail">
                     🍹
                   </span>{" "}
                   Ingredients
@@ -52,7 +52,7 @@ function ShowCocktail() {
                 <p>{cocktail.drinks[0].strIngredient6}  {cocktail.drinks[0].strMeasure6}</p>
                 <hr />
                 <h4 className="title is-4">
-                  <span role="img" aria-label="globe">
+                  <span role="img" aria-label="notebook">
                     🗒
                   </span>{" "}
                   Instructions
@@ -60,21 +60,13 @@ function ShowCocktail() {
                 <hr />
                 <p>{cocktail.drinks[0].strInstructions}</p>
                 <hr />
-                {/* <h4 className="title is-4">
-                  <span role="img" aria-label="wave">
-                    🖐
-                  </span>{" "}
-                  Added By
-                </h4>
-                <hr />
-                <p>{cocktail.addedBy.username}</p> */}
               </div>
             </div>
           </div>
         ) : (
           <p>...loading</p>
         )}
-        <Link to="/cocktails">{"⬅ Back to all cocktails"}</Link>
+        <button className="button is-link is-light"><Link to="/cocktails">{"⬅ Back to all cocktails"}</Link></button>
       </div>
     </section>
   )
