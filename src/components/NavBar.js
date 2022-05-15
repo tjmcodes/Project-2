@@ -6,11 +6,11 @@ import React from "react"
 function Navbar() {
   return (
     <header>
-      <nav className="navbar is-dark">
+      <nav className="navbar is-danger">
         <div className="container">
           <div className="navbar-brand">
             <Link to="cocktails" className="navbar-item">
-                List of Cocktails
+                All Cocktails
             </Link>
             {/* <Link to="gin" className="navbar-item">
                 Gin
