@@ -10,6 +10,12 @@ body, .navbar-item {
   flex-wrap: wrap;
 }
 
+$pink: #ffb4a2;
+$footer-background-color: #363636;
+$footer-padding: 2rem 1.5rem;
+$card-header-background-color: $pink;
+$box-padding: 1rem;
+
 
 @import "~bulma/bulma.sass";
 
@@ -19,6 +25,7 @@ h1{
   align-items: stretch;
   flex-direction: column;
   font-family: 'Josefin Slab', serif;
+  color: #6d6875;
   max-width: 100%;
   margin: 30px;
 
