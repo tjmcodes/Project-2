@@ -12,15 +12,15 @@ function ShowCocktail() {
       const resp = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${cocktailId}`)
       const data = await resp.json()
       setCocktail(data)
-      // console.log(cocktailName)
+      // console.log(cocktailId)
     } 
     fetchCocktail()
-  }, [cocktail, cocktailId])
+  }, [cocktailId])
   
   if (!cocktail) {
     return <p>Cocktail Loading...</p>
   }
-  // console.log(cocktail, { cocktailName })
+  // console.log(cocktail, { cocktailId })
 
 
 
