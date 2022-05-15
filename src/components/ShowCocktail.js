@@ -4,18 +4,18 @@ import { Link, useParams } from "react-router-dom"
 
 function ShowCocktail() {
 
-  const { cocktailName } = useParams()
+  const { cocktailId } = useParams()
   const [cocktail, setCocktail] = React.useState(undefined)
 
   React.useEffect(() => {
     async function fetchCocktail() {
-      const resp = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${cocktailName}`)
+      const resp = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${cocktailId}`)
       const data = await resp.json()
       setCocktail(data)
       // console.log(cocktailName)
     } 
     fetchCocktail()
-  }, [cocktail, cocktailName])
+  }, [cocktail, cocktailId])
   
   if (!cocktail) {
     return <p>Cocktail Loading...</p>
