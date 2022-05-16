@@ -33,25 +33,29 @@ export default () => {
   
 
   return (
-    <>
-      <Wheel
-        mustStartSpinning={mustSpin}
-        prizeNumber={prizeCocktail}
-        data={data}
-        outerBorderColor={"#6d6875"}
-        radiusLineColor={"#6d6875"}
-        outerBorderWidth={3}
-        innerBorderWidth={2}
-        innerRadius={6}
-        fontSize={15}
-        spinDuration={.5}
-        textColors={["#ffffff"]}
+    <main>
+      <section className="section">
+        <div className="container">
+          <Wheel
+            mustStartSpinning={mustSpin}
+            prizeNumber={prizeCocktail}
+            data={data}
+            outerBorderColor={"#6d6875"}
+            radiusLineColor={"#6d6875"}
+            outerBorderWidth={3}
+            innerBorderWidth={2}
+            innerRadius={6}
+            fontSize={15}
+            spinDuration={.5}
+            textColors={["#ffffff"]}
 
-        onStopSpinning={() => {
-          setMustSpin(false);
-        }}
-      />
-      <button onClick={handleSpinClick} className="button is-danger is-light">SPIN ME!</button>
-    </>
+            onStopSpinning={() => {
+              setMustSpin(false);
+            }}
+          />
+          <button onClick={handleSpinClick} className="button is-danger is-light">SPIN ME!</button>
+        </div>
+      </section>
+    </main>
   )
 }

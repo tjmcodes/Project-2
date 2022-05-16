@@ -23,9 +23,8 @@ $box-padding: 1rem;
 h1{
   font-size: 40px;
   display: flex;
+  justify-content: center;
   font-family: 'Josefin Slab', serif;
-  align-items: stretch;
-  flex-direction: column;
   color: #6d6875;
   max-width: 100%;
 
@@ -38,4 +37,9 @@ h1{
 .navbar-item{
   font-family:'Josefin Slab', serif;
   font-size: 20px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
 }
