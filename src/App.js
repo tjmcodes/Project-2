@@ -13,6 +13,7 @@ import AllGinCocktails from "./components/AllGinCocktails"
 import AllVodkaCocktails from "./components/AllVodkaCocktails"
 import AllTequilaCocktails from "./components/AllTequilaCocktails"
 import AllRumCocktails from "./components/AllRumCocktails"
+import Wheel from "./components/Wheel"
 
 function App() {
   // ! 1) You need a router. You'll pretty always use BrowserRouter
@@ -34,6 +35,7 @@ function App() {
         <Route path="allvodka" element={<AllVodkaCocktails />} />
         <Route path="tequila" element={<TequilaCocktails />}/>
         <Route path="alltequila" element={<AllTequilaCocktails />}/>
+        <Route path="roulette" element={<Wheel />}/>
 
       </Routes>
     </Router>
