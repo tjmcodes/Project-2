@@ -14,6 +14,12 @@ function Cocktail({ name, id, images }) {
               <img src={images} alt={name} style={{ maxWidth: 400 }} />
             </figure>
           </div>
+          <div className="card-footer">
+            {localStorage.getItem(id) ? (
+              <p> {localStorage.getItem(id)} 👍 </p>
+            ) : <p>0 👍 </p>
+            }
+          </div>
         </div>
       </Link>
     </div>

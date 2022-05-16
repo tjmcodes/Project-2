@@ -6,6 +6,18 @@ function ShowCocktail() {
 
   const { cocktailId } = useParams()
   const [cocktail, setCocktail] = React.useState(undefined)
+  const [likes, updateLikes] = React.useState(0 + localStorage.getItem(`${cocktailId}`))
+
+  function increaseLikes() {
+    updateLikes(parseInt(likes) + 1)
+    localStorage.setItem(`${cocktailId}`, (parseInt(likes)))
+    console.log(likes)
+  }
+
+  React.useEffect(() => {
+    localStorage.setItem(`${cocktailId}`, (parseInt(likes)))
+  }, [likes]) // ! This will run whenever likes changes.
+
 
   React.useEffect(() => {
     async function fetchCocktail() {
@@ -60,6 +72,13 @@ function ShowCocktail() {
                 <hr />
                 <p>{cocktail.drinks[0].strInstructions}</p>
                 <hr />
+                <div className="card-footer">
+                  <button
+                    onClick={increaseLikes}
+                    className={"button is-primary is-light"}
+                  > Like 👍  </button>
+                  <span className="tag is-light">Total likes: {likes}</span>
+                </div>
               </div>
             </div>
           </div>
