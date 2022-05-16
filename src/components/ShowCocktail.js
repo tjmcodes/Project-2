@@ -76,7 +76,7 @@ function ShowCocktail() {
                   <button
                     onClick={increaseLikes}
                     className={"button is-primary is-light"}
-                  > Like 👍  </button>
+                  > Like ❤️ </button>
                   <span className="tag is-light">Total likes: {likes}</span>
                 </div>
               </div>
