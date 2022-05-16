@@ -16,8 +16,8 @@ function Cocktail({ name, id, images }) {
           </div>
           <div className="card-footer">
             {localStorage.getItem(id) ? (
-              <p> {localStorage.getItem(id)} 👍 </p>
-            ) : <p>0 👍 </p>
+              <p> {localStorage.getItem(id)} ❤️</p>
+            ) : <p>0 ❤️ </p>
             }
           </div>
         </div>
