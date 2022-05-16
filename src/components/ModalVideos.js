@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
 
-function App() {
+
+function ModalVideos() {
   const [isSadOpen, setSadOpen] = useState(false);
   const [isSad2Open, setSad2Open] = useState(false);
   const [isHappyOpen, setHappyOpen] = useState(false);
@@ -10,6 +12,8 @@ function App() {
   const [isRockOpen, setRockOpen] = useState(false);
 
   return (
+
+    
     <div>
       <React.Fragment>
         <ModalVideo
@@ -91,9 +95,10 @@ function App() {
         </div>
       </React.Fragment>
       
+      <button className="button is-link is-light"><Link to="/cocktails">{"⬅ Back to all cocktails"}</Link></button>
     
     </div>
     
   )
 }
-export default App
+export default ModalVideos
