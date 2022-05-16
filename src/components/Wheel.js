@@ -51,7 +51,7 @@ export default () => {
           setMustSpin(false);
         }}
       />
-      <button onClick={handleSpinClick} className="button is-danger is-light">SPIN</button>
+      <button onClick={handleSpinClick} className="button is-danger is-light">SPIN ME!</button>
     </>
   )
 }
