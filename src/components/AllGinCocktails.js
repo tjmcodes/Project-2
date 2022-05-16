@@ -20,6 +20,7 @@ function AllGinCocktails() {
 
 
   return <main>    
+    <h2>Gin Cocktails</h2>
     <div className="container">
       <div className="cocktails">
         {ginCocktails ?

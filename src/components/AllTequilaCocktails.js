@@ -17,6 +17,7 @@ function AllTequilaCocktails() {
   )
   
   return <main>    
+    <h2>Tequila Cocktails</h2>
     <div className="container">
       <div className="cocktails">
         {tequilaCocktails ?

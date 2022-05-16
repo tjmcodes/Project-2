@@ -31,7 +31,7 @@ h1{
 }
 .card-header-title{
   font-family: 'Josefin Slab', serif;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .navbar-item{
@@ -42,4 +42,12 @@ h1{
 .container{
   display: flex;
   justify-content: center;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  font-family: 'Josefin Slab', serif;
+  font-size: 40px;
+
 }
