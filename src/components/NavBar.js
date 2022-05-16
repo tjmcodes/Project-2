@@ -21,8 +21,8 @@ function Navbar() {
             <Link to="vodka" className="navbar-item">
                 Vodka
             </Link> */}
-            <Link to="modal" className="navbar-item">
-                Magic Page
+            <Link to="roulette" className="navbar-item">
+                Roulette
             </Link>
 
 
