@@ -10,7 +10,7 @@ function Navbar() {
         <div className="container">
           <div className="navbar-brand">
             <Link to="cocktails" className="navbar-item">
-                All Cocktails
+                Home
             </Link>
             {/* <Link to="gin" className="navbar-item">
                 Gin

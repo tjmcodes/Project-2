@@ -12,7 +12,6 @@ body, .navbar-item {
 
 $pink: #ffb4a2;
 $title-color: #b5838d;
-$card-header-title: 'Josefin Slab', serif;
 $footer-background-color: #363636;
 $footer-padding: 2rem 1.5rem;
 $card-header-background-color: $pink;
@@ -24,9 +23,19 @@ $box-padding: 1rem;
 h1{
   font-size: 40px;
   display: flex;
+  font-family: 'Josefin Slab', serif;
   align-items: stretch;
   flex-direction: column;
   color: #6d6875;
   max-width: 100%;
 
+}
+.card-header-title{
+  font-family: 'Josefin Slab', serif;
+  font-size: 25px;
+}
+
+.navbar-item{
+  font-family:'Josefin Slab', serif;
+  font-size: 20px;
 }

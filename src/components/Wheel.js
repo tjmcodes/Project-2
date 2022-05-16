@@ -36,7 +36,7 @@ export default () => {
     <>
       <Wheel
         mustStartSpinning={mustSpin}
-        prizeCocktail={prizeCocktail}
+        prizeNumber={prizeCocktail}
         data={data}
         outerBorderColor={"#6d6875"}
         radiusLineColor={"#6d6875"}
@@ -44,7 +44,7 @@ export default () => {
         innerBorderWidth={2}
         innerRadius={6}
         fontSize={15}
-        spinDuration={1.1}
+        spinDuration={.5}
         textColors={["#ffffff"]}
 
         onStopSpinning={() => {
