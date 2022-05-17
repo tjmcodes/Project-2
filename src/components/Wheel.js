@@ -1,33 +1,21 @@
 import React, { useState } from "react"
-import { Wheel } from "react-custom-roulette"
+import { Wheel, Link } from "react-custom-roulette"
 
 const data = [
-  { option: "Gimlet", style: { backgroundColor: "#b5838d" } },
-  { option: "Pure Passion", style: { backgroundColor: "#e5989b" } },
-  { option: "Moscow Mule", style: { backgroundColor: "#ffb4a2" } },
-  { option: "Tequila Sunrise", style: { backgroundColor: "#ffcdb2" } },
-  { option: "Margarita", style: { backgroundColor: "#b5838d" } },
-  { option: "Espresso Martini", style: { backgroundColor: "#e5989b" } },
-  { option: "Vampiro", style: { backgroundColor: "#ffb4a2" } },
-  { option: "Zombie", style: { backgroundColor: "#ffcdb2" } },
-  { option: "Sex on the Beach", style: { backgroundColor: "#b5838d" } },
-  { option: "Negroni", style: { backgroundColor: "#e5989b" } },
-  { option: "Bramble", style: { backgroundColor: "#ffb4a2" } },
-  { option: "Dark and Stormy", style: { backgroundColor: "#ffcdb2" } },
-  { option: "Cosmopolitan", style: { backgroundColor: "#b5838d" } },
-  { option: "Dry Martini", style: { backgroundColor: "#e5989b" } },
-  { option: "Long Island Iced Tea", style: { backgroundColor: "#ffb4a2" } },
-  { option: "Spice 75", style: { backgroundColor: "#ffcdb2" } }
+  { id: 1, option: "Gin", style: { backgroundColor: "#b5838d" } },
+  { id: 2, option: "Tequila", style: { backgroundColor: "#e5989b" } },
+  { id: 3, option: "Vodka", style: { backgroundColor: "#ffb4a2" } },
+  { id: 4, option: "Rum", style: { backgroundColor: "#ffcdb2" } }
 ]
 
 // eslint-disable-next-line react/display-name
 export default () => {
   const [mustSpin, setMustSpin] = useState(false);
-  const [prizeCocktail, setPrizeCocktail] = useState(0);
+  const [prizeNumber, setPrizeNumber] = useState(0);
 
   const handleSpinClick = () => {
-    const newPrizeCocktail = Math.floor(Math.random() * data.length)
-    setPrizeCocktail(newPrizeCocktail)
+    const newPrizeNumber = Math.floor(Math.random() * data.length)
+    setPrizeNumber(newPrizeNumber)
     setMustSpin(true)
   }
   
@@ -38,7 +26,7 @@ export default () => {
         <div className="container">
           <Wheel
             mustStartSpinning={mustSpin}
-            prizeNumber={prizeCocktail}
+            prizeNumber={prizeNumber}
             data={data}
             outerBorderColor={"#6d6875"}
             radiusLineColor={"#6d6875"}
@@ -54,6 +42,11 @@ export default () => {
             }}
           />
           <button onClick={handleSpinClick} className="button is-danger is-light">SPIN ME!</button>
+          {mustSpin ? data[prizeNumber].option : "0"}
+          <Link to={`/random/cocktail/${data[prizeNumber].option}`}>
+            Go to recipe
+          </Link>
+          <hr />
         </div>
       </section>
     </main>
