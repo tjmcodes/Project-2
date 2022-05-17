@@ -43,7 +43,7 @@ export default () => {
           />
           <button onClick={handleSpinClick} className="button is-danger is-light">SPIN ME!</button>
           {mustSpin ? data[prizeNumber].option : "0"}
-          <Link to={`/random/cocktail/${data[prizeNumber].option}`}>
+          <Link to={`/modal/cocktail/${data[prizeNumber].option}`}>
             Go to recipe
           </Link>
           <hr />
