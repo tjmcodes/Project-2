@@ -8,7 +8,7 @@ function AllRumCocktails() {
 
   React.useEffect(() => {
     async function fetchCocktails() {
-      const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin")     
+      const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Rum")     
       const data = await resp.json()
       console.log(data)
       setRumCocktails(data)
