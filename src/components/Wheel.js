@@ -56,7 +56,7 @@ export default () => {
             {!mustSpin ? data[prizeNumber].option : " "}
           </div>
           <br />
-          <button className="button is-danger is-light"><Link to={`/modal/cocktail/${data[prizeNumber].option}`}>
+          <button className="button is-danger is-light"><Link to={`/modal/cocktail/${data[prizeNumber].option}`} style={{ textDecoration: "none" }}>
             Your Random Recipe!
           </Link></button>
           <hr />
