@@ -85,7 +85,7 @@ function ShowCocktail() {
         ) : (
           <p>...loading</p>
         )}
-        <button className="button is-link is-light"><Link to="/cocktails">{"⬅ Back to all cocktails"}</Link></button>
+        <button className="button is-danger is-light"><Link to="/cocktails">{"⬅ Back to all cocktails"}</Link></button>
       </div>
     </section>
   )
