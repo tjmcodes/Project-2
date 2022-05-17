@@ -4,7 +4,6 @@ import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
 import Wheel from "./Wheel";
 
-
 function ModalVideos() {
   const [isSadOpen, setSadOpen] = useState(false);
   const [isSad2Open, setSad2Open] = useState(false);
