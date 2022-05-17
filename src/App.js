@@ -15,6 +15,7 @@ import AllTequilaCocktails from "./components/AllTequilaCocktails"
 import AllRumCocktails from "./components/AllRumCocktails"
 import ModalVideos from "./components/ModalVideos"
 import Wheel from "./components/Wheel"
+import MusicMood from "./components/RandomCocktail"
 
 function App() {
   // ! 1) You need a router. You'll pretty always use BrowserRouter
@@ -38,6 +39,7 @@ function App() {
         <Route path="alltequila" element={<AllTequilaCocktails />}/>
         <Route path="modal" element={<ModalVideos />}/>
         <Route path="roulette" element={<Wheel />}/>
+        <Route path="modal/cocktail/:base" element={<MusicMood />} />
 
       </Routes>
     </Router>

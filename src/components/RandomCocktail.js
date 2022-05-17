@@ -1,0 +1,111 @@
+import React from "react"
+import { Link, useParams } from "react-router-dom"
+
+function MusicMood() {
+
+  const { base } = useParams()
+  const { cocktailName } = useParams()
+  const [cocktail, setCocktail] = React.useState(undefined)
+  const [likes, updateLikes] = React.useState(0 + localStorage.getItem(`${cocktailName}`))
+  const [randomCocktail, setRandomCocktail] = React.useState(undefined)
+
+
+  function increaseLikes() {
+    updateLikes(parseInt(likes) + 1)
+    localStorage.setItem(`${cocktailName}`, (parseInt(likes)))
+    console.log(likes)
+  }
+
+  React.useEffect(() => {
+    localStorage.setItem(`${cocktailName}`, (parseInt(likes)))
+  }, [likes]) // ! This will run whenever likes changes.
+
+  React.useEffect(() => {
+    async function fetchCocktail() {
+      const resp = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${base}`)
+      const data = await resp.json()
+      const random = data.drinks[Math.floor(Math.random() * data.drinks.length)]
+      setCocktail(random)
+      const resp2 = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${random.idDrink}`)
+      const data2 = await resp2.json()
+      setRandomCocktail(data2)
+      console.log(data2)
+
+    }
+    fetchCocktail()
+
+
+    localStorage.getItem(`${cocktailName}`)
+  }, [])
+  console.log(cocktail)
+
+
+  if (!randomCocktail) {
+    return <p>Cocktail Loading...</p>
+  }
+
+
+  return (
+    <section className="section">
+      <div className="container">
+        {cocktail ? (
+          <div>
+            <h2 className="title has-text-centered">{randomCocktail.drinks[0].strDrink}</h2>
+            {/* <p>{randomCocktail.drinks[0].strIngredient1}</p> */}
+            <hr />
+            <div className="columns">
+              <div className="column is-half">
+                <figure className="image">
+                  <img src={randomCocktail.drinks[0].strDrinkThumb} alt={cocktail.strDrink} />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <h4 className="title is-4">
+                  <span role="img" aria-label="plate">
+                    🍽
+                  </span>{" "}
+                  Ingredients
+                </h4>
+                <p>{randomCocktail.drinks[0].strIngredient1}  {cocktail.strMeasure1}</p>
+                <p>{randomCocktail.drinks[0].strIngredient2}  {cocktail.strMeasure2}</p>
+                <p>{randomCocktail.drinks[0].strIngredient3}  {cocktail.strMeasure3}</p>
+                <p>{randomCocktail.drinks[0].strIngredient4}  {cocktail.strMeasure4}</p>
+                <p>{randomCocktail.drinks[0].strIngredient5}  {cocktail.strMeasure5}</p>
+                <p>{randomCocktail.drinks[0].strIngredient6}  {cocktail.strMeasure6}</p>
+                <hr />
+                <h4 className="title is-4">
+                  <span role="img" aria-label="globe">
+                    🌍
+                  </span>{" "}
+                  Instructions
+                </h4>
+                <hr />
+                <p>{randomCocktail.drinks[0].strInstructions}</p>
+                <hr />
+
+                <div className="card-footer">
+                  <button
+                    onClick={increaseLikes}
+                    className={"button is-primary is-light"}
+                  > Like 👍  </button>
+                  <span className="tag is-light">Total likes: {likes}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        ) : (
+          <p>...loading</p>
+        )}
+        <Link to="/cocktails">{"⬅ Back to all cocktails"}</Link>
+      </div>
+    </section>
+  )
+
+}
+
+
+export default MusicMood
+
+
+
