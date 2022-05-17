@@ -1,5 +1,6 @@
 import React, { useState } from "react"
-import { Wheel, Link } from "react-custom-roulette"
+import { Wheel } from "react-custom-roulette"
+import { Link } from "react-router-dom"
 
 const data = [
   { id: 1, option: "Gin", style: { backgroundColor: "#b5838d" } },
@@ -42,7 +43,7 @@ export default () => {
             }}
           />
           <button onClick={handleSpinClick} className="button is-danger is-light">SPIN ME!</button>
-          {mustSpin ? data[prizeNumber].option : "0"}
+          {!mustSpin ? data[prizeNumber].option : " "}
           <Link to={`/modal/cocktail/${data[prizeNumber].option}`}>
             Go to recipe
           </Link>
