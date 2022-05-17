@@ -24,10 +24,6 @@ function Navbar() {
             <Link to="modal" className="navbar-item">
                🎰 Roulette
             </Link>
-
-
-
-
           </div>
         </div>
       </nav>

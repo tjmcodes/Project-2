@@ -3,10 +3,10 @@ import { Wheel } from "react-custom-roulette"
 import { Link } from "react-router-dom"
 
 const data = [
-  { id: 1, option: "Gin", style: { backgroundColor: "#b5838d" } },
-  { id: 2, option: "Tequila", style: { backgroundColor: "#e5989b" } },
-  { id: 3, option: "Vodka", style: { backgroundColor: "#ffb4a2" } },
-  { id: 4, option: "Rum", style: { backgroundColor: "#ffcdb2" } }
+  { id: 1, option: "Gin", style: { backgroundColor: "#bde0fe", fontSize: 100 } },
+  { id: 2, option: "Tequila", style: { backgroundColor: "#ffc8dd" } },
+  { id: 3, option: "Vodka", style: { backgroundColor: "#cdb4db" } },
+  { id: 4, option: "Rum", style: { backgroundColor: "#fcf6bd" } }
 ]
 
 // eslint-disable-next-line react/display-name
@@ -25,28 +25,40 @@ export default () => {
     <main>
       <section className="section">
         <div className="container">
-          <Wheel
-            mustStartSpinning={mustSpin}
-            prizeNumber={prizeNumber}
-            data={data}
-            outerBorderColor={"#6d6875"}
-            radiusLineColor={"#6d6875"}
-            outerBorderWidth={3}
-            innerBorderWidth={2}
-            innerRadius={6}
-            fontSize={15}
-            spinDuration={.5}
-            textColors={["#ffffff"]}
+          <h1>Too much to choose from?</h1>
+          <h3>Why not play a game of cocktail roulette to help!</h3>
+          <br />
+          <div className="wheel">
+            <Wheel
+              mustStartSpinning={mustSpin}
+              prizeNumber={prizeNumber}
+              data={data}
+              outerBorderColor={"#d0f4de"}
+              radiusLineColor={"#d0f4de"}
+              outerBorderWidth={5}
+              innerBorderWidth={2}
+              innerRadius={10}
+              innerBorderColor={"#d0f4de"}
+              fontSize={30}
+              spinDuration={.4}
+              textColors={["#6d6875"]}
 
-            onStopSpinning={() => {
-              setMustSpin(false);
-            }}
-          />
-          <button onClick={handleSpinClick} className="button is-danger is-light">SPIN ME!</button>
-          {!mustSpin ? data[prizeNumber].option : " "}
-          <Link to={`/modal/cocktail/${data[prizeNumber].option}`}>
-            Go to recipe
-          </Link>
+              onStopSpinning={() => {
+                setMustSpin(false);
+              }}
+            />
+          </div>
+          <hr />
+          <div className="container">
+            <button onClick={handleSpinClick} className="button is-danger is-light">SPIN ME!</button>
+            <hr />
+            <h3>Your random alcohol is:</h3>
+            {!mustSpin ? data[prizeNumber].option : " "}
+          </div>
+          <br />
+          <button className="button is-danger is-light"><Link to={`/modal/cocktail/${data[prizeNumber].option}`}>
+            Your Random Recipe!
+          </Link></button>
           <hr />
         </div>
       </section>

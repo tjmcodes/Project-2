@@ -8,6 +8,14 @@ body, .navbar-item {
   display: flex;
   flex-wrap: wrap;
 }
+.baseAlcohol{
+  font-size: 30px;
+  font-family: 'Josefin Slab', serif;
+}
+
+.card-header-title{
+  font-family: 'Josefin Slab', serif;
+}
 
 $pink: #ffb4a2;
 $title-color: #b5838d;
@@ -28,6 +36,20 @@ h1{
   max-width: 100%;
 
 }
+h2{
+  display: flex;
+  justify-content: center;
+  font-family: 'Josefin Slab', serif;
+  font-size: 40px;
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  font-family: 'Josefin Slab', serif;
+  font-size: 25px;
+  color: #6d6875;
+}
 .card-header-title{
   font-family: 'Josefin Slab', serif;
   font-size: 23px;
@@ -38,15 +60,10 @@ h1{
   font-size: 20px;
 }
 
-// .container{
-//   display: flex;
-//   justify-content: center;
-// }
-
-h2{
+.wheel{
   display: flex;
-  justify-content: center;
-  font-family: 'Josefin Slab', serif;
-  font-size: 40px;
-
+  justify-content: space-around;
+  
 }
+
+
