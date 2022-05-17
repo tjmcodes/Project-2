@@ -18,7 +18,7 @@ function MusicMood() {
 
   React.useEffect(() => {
     localStorage.setItem(`${cocktailName}`, (parseInt(likes)))
-  }, [likes]) // ! This will run whenever likes changes.
+  }, [likes, cocktailName]) // ! This will run whenever likes changes.
 
   React.useEffect(() => {
     async function fetchCocktail() {
@@ -36,7 +36,7 @@ function MusicMood() {
 
 
     localStorage.getItem(`${cocktailName}`)
-  }, [])
+  }, [base, cocktailName])
   console.log(cocktail)
 
 
