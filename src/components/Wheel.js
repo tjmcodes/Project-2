@@ -49,6 +49,7 @@ export default () => {
 
         onStopSpinning={() => {
           setMustSpin(false);
+          console.log(data)
         }}
       />
       <button onClick={handleSpinClick} className="button is-danger is-light">SPIN</button>

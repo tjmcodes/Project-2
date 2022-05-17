@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
+import Wheel from "./Wheel";
 
 
 function ModalVideos() {
@@ -16,6 +17,9 @@ function ModalVideos() {
     
     <div>
       <React.Fragment>
+        <div className="container">
+          <Wheel />
+        </div>
         <ModalVideo
           channel="youtube"
           autoplay
