@@ -66,20 +66,20 @@ function MusicMood() {
                   <span role="img" aria-label="cocktail">
                     🍹
                   </span>{" "}
-                  Ingredients
+                  <span className="headers">Ingredients</span>
                 </h4>
-                <p>{randomCocktail.drinks[0].strIngredient1}  {cocktail.strMeasure1}</p>
-                <p>{randomCocktail.drinks[0].strIngredient2}  {cocktail.strMeasure2}</p>
-                <p>{randomCocktail.drinks[0].strIngredient3}  {cocktail.strMeasure3}</p>
-                <p>{randomCocktail.drinks[0].strIngredient4}  {cocktail.strMeasure4}</p>
-                <p>{randomCocktail.drinks[0].strIngredient5}  {cocktail.strMeasure5}</p>
-                <p>{randomCocktail.drinks[0].strIngredient6}  {cocktail.strMeasure6}</p>
+                <p>{randomCocktail.drinks[0].strIngredient1}  <strong>{randomCocktail.drinks[0].strMeasure1}</strong></p>
+                <p>{randomCocktail.drinks[0].strIngredient2}  <strong>{randomCocktail.drinks[0].strMeasure2}</strong></p>
+                <p>{randomCocktail.drinks[0].strIngredient3}  <strong>{randomCocktail.drinks[0].strMeasure3}</strong></p>
+                <p>{randomCocktail.drinks[0].strIngredient4}  <strong>{randomCocktail.drinks[0].strMeasure4}</strong></p>
+                <p>{randomCocktail.drinks[0].strIngredient5}  <strong>{randomCocktail.drinks[0].strMeasure5}</strong></p>
+                <p>{randomCocktail.drinks[0].strIngredient6}  <strong>{randomCocktail.drinks[0].strMeasure6}</strong></p>
                 <hr />
                 <h4 className="title is-4">
                   <span role="img" aria-label="notepad">
                     🗒
                   </span>{" "}
-                  Instructions
+                  <span className="headers">Instructions</span>
                 </h4>
                 <hr />
                 <p>{randomCocktail.drinks[0].strInstructions}</p>
