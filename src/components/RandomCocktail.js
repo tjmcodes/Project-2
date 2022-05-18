@@ -61,8 +61,8 @@ function MusicMood() {
               </div>
               <div className="column is-half">
                 <h4 className="title is-4">
-                  <span role="img" aria-label="plate">
-                    🍽
+                  <span role="img" aria-label="cocktail">
+                    🍹
                   </span>{" "}
                   Ingredients
                 </h4>
@@ -74,20 +74,20 @@ function MusicMood() {
                 <p>{randomCocktail.drinks[0].strIngredient6}  {cocktail.strMeasure6}</p>
                 <hr />
                 <h4 className="title is-4">
-                  <span role="img" aria-label="globe">
-                    🌍
+                  <span role="img" aria-label="notepad">
+                    🗒
                   </span>{" "}
                   Instructions
                 </h4>
                 <hr />
                 <p>{randomCocktail.drinks[0].strInstructions}</p>
                 <hr />
-
+                  
                 <div className="card-footer">
                   <button
                     onClick={increaseLikes}
                     className={"button is-primary is-light"}
-                  > Like 👍  </button>
+                  > Like ❤️  </button>
                   <span className="tag is-light">Total likes: {likes}</span>
                 </div>
               </div>
