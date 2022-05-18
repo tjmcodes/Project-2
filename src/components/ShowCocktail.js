@@ -70,7 +70,7 @@ function ShowCocktail() {
                   <span className="headers">Instructions</span>
                 </h4>
                 <p>{cocktail.drinks[0].strInstructions}</p>
-                <hr />
+                <br />
                 <div className="card-footer">
                   <button
                     onClick={increaseLikes}
