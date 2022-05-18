@@ -81,9 +81,8 @@ function MusicMood() {
                   </span>{" "}
                   <span className="headers">Instructions</span>
                 </h4>
-                <hr />
                 <p>{randomCocktail.drinks[0].strInstructions}</p>
-                <hr />
+                <br />
                 <div className="card-footer">
                   <button
                     onClick={increaseLikes}
@@ -91,6 +90,7 @@ function MusicMood() {
                   > Like ❤️  </button>
                   <span className="tag is-light">Total likes: {likes}</span>
                 </div>
+                <hr />
               </div>
             </div>
           </div>
