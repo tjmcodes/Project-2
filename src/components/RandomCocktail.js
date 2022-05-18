@@ -1,5 +1,7 @@
 import React from "react"
 import { Link, useParams } from "react-router-dom"
+import ModalVideos from "./ModalVideos"
+
 
 function MusicMood() {
 
@@ -98,6 +100,9 @@ function MusicMood() {
           <p>...loading</p>
         )}
         <Link to="/cocktails">{"⬅ Back to all cocktails"}</Link>
+        <div className="container">
+          <ModalVideos />
+        </div>
       </div>
     </section>
   )

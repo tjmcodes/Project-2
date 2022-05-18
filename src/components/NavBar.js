@@ -21,7 +21,7 @@ function Navbar() {
             <Link to="vodka" className="navbar-item">
                 Vodka
             </Link> */}
-            <Link to="modal" style={{ textDecoration: "none" }} className="navbar-item">
+            <Link to="roulette" style={{ textDecoration: "none" }} className="navbar-item">
                🎰 Roulette
             </Link>
           </div>

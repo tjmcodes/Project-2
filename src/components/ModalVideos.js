@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
-import Wheel from "./Wheel";
 
 function ModalVideos() {
   const [isSadOpen, setSadOpen] = useState(false);
@@ -14,11 +12,8 @@ function ModalVideos() {
   return (
 
     
-    <div>
-      <React.Fragment>
-        <div className="container">
-          <Wheel />
-        </div>
+    <div className="columns is-multiline is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
+      <React.Fragment>        
         <ModalVideo
           channel="youtube"
           autoplay
@@ -27,7 +22,7 @@ function ModalVideos() {
           onClose={() => setSadOpen(false)}
         />
 
-        <div className="buttons are-large"> 
+        <div className="buttons are-large column"> 
           <button className="button is-link" onClick={() => setSadOpen(true)}>
         Click here to listen to sad songs 😭
           </button>
@@ -43,7 +38,7 @@ function ModalVideos() {
           onClose={() => setSad2Open(false)}
         />
 
-        <div className="buttons are-large"> 
+        <div className="buttons are-large column"> 
           <button className="button is-link" onClick={() => setSad2Open(true)}>
         Click here to sing along to sad songs 😭
           </button>
@@ -59,7 +54,7 @@ function ModalVideos() {
           onClose={() => setHappyOpen(false)}
         />
 
-        <div className="buttons are-large"> 
+        <div className="buttons are-large column"> 
           <button className="button is-warning" onClick={() => setHappyOpen(true)}>
         Click here for a good sing-along 🎤
           </button>
@@ -75,7 +70,7 @@ function ModalVideos() {
           onClose={() => setRelaxOpen(false)}
         />
 
-        <div className="buttons are-large"> 
+        <div className="buttons are-large column"> 
           <button className="button is-primary" onClick={() => setRelaxOpen(true)}>
         Click here to chill 🛀
           </button>
@@ -91,17 +86,16 @@ function ModalVideos() {
           onClose={() => setRockOpen(false)}
         />
 
-        <div className="buttons are-large"> 
+        <div className="buttons are-large column"> 
           <button className="button is-danger" onClick={() => setRockOpen(true)}>
           Lets rock out! 🤘 🎸 🤘
           </button>
         </div>
       </React.Fragment>
-      
-      <button className="button is-link is-light"><Link to="/cocktails">{"⬅ Back to all cocktails"}</Link></button>
     
     </div>
     
   )
 }
 export default ModalVideos
+
