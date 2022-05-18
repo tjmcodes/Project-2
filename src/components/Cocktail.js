@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 function Cocktail({ name, id, images }) {
   return (
-    <div className="column is-one-quarter-desktop is-one-third-tablet">
-      
+    <div className="column is-one-quarter-desktop is-one-third-tablet">      
       <div className="card">
         <div className="card-header">
           <h3 className="card-header-title title-color">{name}</h3>

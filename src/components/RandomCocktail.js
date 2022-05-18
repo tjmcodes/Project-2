@@ -84,7 +84,6 @@ function MusicMood() {
                 <hr />
                 <p>{randomCocktail.drinks[0].strInstructions}</p>
                 <hr />
-                  
                 <div className="card-footer">
                   <button
                     onClick={increaseLikes}
