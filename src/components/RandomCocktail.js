@@ -98,7 +98,7 @@ function MusicMood() {
         ) : (
           <p>...loading</p>
         )}
-        <Link to="/cocktails">{"⬅ Back to all cocktails"}</Link>
+        <button className="button is-danger is-light"><Link to="/cocktails" style={{ textDecoration: "none" }}>{"⬅ 🏠  Home"}</Link></button>
         <div className="container">
           <ModalVideos />
         </div>

@@ -78,13 +78,14 @@ function ShowCocktail() {
                   > Like ❤️ </button>
                   <span className="tag is-light">Total likes: {likes}</span>
                 </div>
+                <hr />
               </div>
             </div>
           </div>
         ) : (
           <p>...loading</p>
         )}
-        <button className="button is-danger is-light"><Link to="/cocktails">{"⬅ Back to all cocktails"}</Link></button>
+        <button className="button is-danger is-light"><Link to="/cocktails" style={{ textDecoration: "none" }}>{"⬅  🏠  Home"}</Link></button>
       </div>
     </section>
   )
