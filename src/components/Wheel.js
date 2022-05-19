@@ -1,9 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from "react"
 import { Wheel } from "react-custom-roulette"
 import { Link } from "react-router-dom"
 
 const data = [
-  { id: 1, option: "Gin", style: { backgroundColor: "#bde0fe", fontSize: 100 } },
+  { id: 1, option: "Gin", style: { backgroundColor: "#bde0fe" } },
   { id: 2, option: "Tequila", style: { backgroundColor: "#ffc8dd" } },
   { id: 3, option: "Vodka", style: { backgroundColor: "#cdb4db" } },
   { id: 4, option: "Rum", style: { backgroundColor: "#fcf6bd" } }
@@ -13,9 +14,11 @@ const data = [
 export default () => {
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
+  const [initialState, setInitialState] = useState(true);
 
   const handleSpinClick = () => {
     const newPrizeNumber = Math.floor(Math.random() * data.length)
+    setInitialState(false)
     setPrizeNumber(newPrizeNumber)
     setMustSpin(true)
   }
@@ -53,7 +56,7 @@ export default () => {
             <button onClick={handleSpinClick} className="button is-danger is-light">SPIN ME!</button>
             <hr />
             <h3>Your random alcohol is:</h3>
-            {!mustSpin ? data[prizeNumber].option : " "}
+            <h3 className="result">{!initialState && !mustSpin ? data[prizeNumber].option : " " }</h3>
           </div>
           <br />
           <button className="button is-danger is-light"><Link to={`/modal/cocktail/${data[prizeNumber].option}`} style={{ textDecoration: "none" }}>
