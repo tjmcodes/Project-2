@@ -85,7 +85,7 @@ function MusicMood() {
                   <span className="headers">Instructions</span>
                 </h4>
                 <p>{randomCocktail.drinks[0].strInstructions}</p>
-                <br />
+                <hr />
                 <div className="container">
                   {/* <ModalVideos /> */}
                   {base === "Gin" && <GinModalVideo />}

@@ -17,7 +17,7 @@ function RumModalVideo() {
 
       <div className="buttons are-large column"> 
         <button className="button is-primary" onClick={() => setRelaxOpen(true)}>
-        Click here to chill 🛀
+        Wanna have some fun? 🎸
         </button>
       </div>
     </React.Fragment>
