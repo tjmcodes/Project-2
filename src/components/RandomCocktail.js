@@ -1,6 +1,10 @@
 import React from "react"
 import { Link, useParams } from "react-router-dom"
 import ModalVideos from "./ModalVideos"
+import GinModalVideo from "./GinModalVideo"
+import VodkaModalVideo from "./VodkaModalVideo"
+import RumModalVideo from "./RumModalVideo"
+import TequilaModalVideo from "./TequilaModalVideo"
 
 
 function MusicMood() {
@@ -46,6 +50,7 @@ function MusicMood() {
     return <p>Cocktail Loading...</p>
   }
 
+
   return (
     <section className="section">
       <div className="container">
@@ -82,6 +87,13 @@ function MusicMood() {
                 </h4>
                 <p>{randomCocktail.drinks[0].strInstructions}</p>
                 <br />
+                <div className="container">
+                  {/* <ModalVideos /> */}
+                  {base === "Gin" && <GinModalVideo />}
+                  {base === "Vodka" && <VodkaModalVideo />}
+                  {base === "Rum" && <RumModalVideo />}
+                  {base === "Tequila" && <TequilaModalVideo />}
+                </div>
                 <div className="card-footer">
                   <button
                     onClick={increaseLikes}
@@ -98,9 +110,7 @@ function MusicMood() {
           <p>...loading</p>
         )}
         <button className="button is-danger is-light"><Link to="/cocktails" style={{ textDecoration: "none" }}>{"⬅ 🏠  Home"}</Link></button>
-        <div className="container">
-          <ModalVideos />
-        </div>
+    
       </div>
     </section>
   )
