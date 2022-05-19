@@ -5,15 +5,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Navbar from "./components/NavBar"
 import ShowCocktail from "./components/ShowCocktail"
 import CocktailsList from "./components/CocktailsList"
-// import GinCocktails from "./components/GinCocktails"
-<<<<<<< HEAD
 import VodkaVideo from "./components/VodkaModalVideo"
-// import VodkaCocktails from "./components/VodkaCocktails"
-=======
 import RumModalVideo from "./components/RumModalVideo"
 import TequilaModalVideo from "./components/TequilaModalVideo"
->>>>>>> 795f0c8350f2feb38dbf3fc6b62247a78a45995e
-// import TequilaCocktails from "./components/VodkaCocktails"
 import AllGinCocktails from "./components/AllGinCocktails"
 import AllVodkaCocktails from "./components/AllVodkaCocktails"
 import AllTequilaCocktails from "./components/AllTequilaCocktails"
