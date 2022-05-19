@@ -6,7 +6,7 @@ import Navbar from "./components/NavBar"
 import ShowCocktail from "./components/ShowCocktail"
 import CocktailsList from "./components/CocktailsList"
 // import GinCocktails from "./components/GinCocktails"
-// import RumCocktails from "./components/RumCocktails"
+import VodkaVideo from "./components/VodkaModalVideo"
 // import VodkaCocktails from "./components/VodkaCocktails"
 // import TequilaCocktails from "./components/VodkaCocktails"
 import AllGinCocktails from "./components/AllGinCocktails"
@@ -16,6 +16,7 @@ import AllRumCocktails from "./components/AllRumCocktails"
 import ModalVideos from "./components/ModalVideos"
 import Wheel from "./components/Wheel"
 import RandomCocktail from "./components/RandomCocktail"
+
 
 function App() {
   // ! 1) You need a router. You'll pretty always use BrowserRouter
@@ -33,7 +34,7 @@ function App() {
         <Route path="allgin" element={<AllGinCocktails />} />
         {/* <Route path="rum" element={<RumCocktails />}/> */}
         <Route path="allrum" element={<AllRumCocktails />}/>
-        {/* <Route path="vodka" element={<VodkaCocktails />}/> */}
+        <Route path="vodkamodal" element={<VodkaVideo />}/> 
         <Route path="allvodka" element={<AllVodkaCocktails />} />
         {/* <Route path="tequila" element={<TequilaCocktails />} /> */}
         <Route path="alltequila" element={<AllTequilaCocktails />}/>
