@@ -54,24 +54,23 @@ function ShowCocktail() {
                   <span role="img" aria-label="cocktail">
                     🍹
                   </span>{" "}
-                  Ingredients
+                  <span className="headers">Ingredients</span>
                 </h4>
-                <p>{cocktail.drinks[0].strIngredient1}  {cocktail.drinks[0].strMeasure1}</p>
-                <p>{cocktail.drinks[0].strIngredient2}  {cocktail.drinks[0].strMeasure2}</p>
-                <p>{cocktail.drinks[0].strIngredient3}  {cocktail.drinks[0].strMeasure3}</p>
-                <p>{cocktail.drinks[0].strIngredient4}  {cocktail.drinks[0].strMeasure4}</p>
-                <p>{cocktail.drinks[0].strIngredient5}  {cocktail.drinks[0].strMeasure5}</p>
-                <p>{cocktail.drinks[0].strIngredient6}  {cocktail.drinks[0].strMeasure6}</p>
+                <p>{cocktail.drinks[0].strIngredient1}  <strong>{cocktail.drinks[0].strMeasure1}</strong></p>
+                <p>{cocktail.drinks[0].strIngredient2}  <strong>{cocktail.drinks[0].strMeasure2}</strong></p>
+                <p>{cocktail.drinks[0].strIngredient3}  <strong>{cocktail.drinks[0].strMeasure3}</strong></p>
+                <p>{cocktail.drinks[0].strIngredient4}  <strong>{cocktail.drinks[0].strMeasure4}</strong></p>
+                <p>{cocktail.drinks[0].strIngredient5}  <strong>{cocktail.drinks[0].strMeasure5}</strong></p>
+                <p>{cocktail.drinks[0].strIngredient6}  <strong>{cocktail.drinks[0].strMeasure6}</strong></p>
                 <hr />
                 <h4 className="title is-4">
                   <span role="img" aria-label="notebook">
                     🗒
                   </span>{" "}
-                  Instructions
+                  <span className="headers">Instructions</span>
                 </h4>
-                <hr />
                 <p>{cocktail.drinks[0].strInstructions}</p>
-                <hr />
+                <br />
                 <div className="card-footer">
                   <button
                     onClick={increaseLikes}
@@ -79,14 +78,14 @@ function ShowCocktail() {
                   > Like ❤️ </button>
                   <span className="tag is-light">Total likes: {likes}</span>
                 </div>
+                <hr />
               </div>
             </div>
           </div>
         ) : (
           <p>...loading</p>
         )}
-        <hr />
-        <button className="button is-danger is-light"><Link to="/">{"⬅ Back to Homepage"}</Link></button>
+        <button className="button is-danger is-light"><Link to="/" style={{ textDecoration: "none" }}>{"⬅  🏠  Home"}</Link></button>
       </div>
     </section>
   )

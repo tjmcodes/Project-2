@@ -6,23 +6,22 @@ import TequilaCocktails from "./TequilaCocktails";
 import { Link } from "react-router-dom";
 
 function CocktailsList() {
-  return <div className="Container">
+  return <div className="container">
     <h1>Gin</h1>
     <GinCocktails />
-    <button className="button is-danger is-light"><Link to="/allgin">{"Show all the Gin cocktails"}</Link></button>
+    <span className="link"><button className="button is-danger is-light"><Link to="/allgin">{"All Gin Cocktails"}</Link></button></span>
 
     <h1>Rum</h1>
-    <RumCocktails />
-    <button className="button is-danger is-light"><Link to="/allrum">{"Show all the Rum cocktails"}</Link></button>
-    
+    <RumCocktails />    
+    <span className="link"><button className="button is-danger is-light"><Link to="/allrum">{"All Rum Cocktails"}</Link></button></span>
+
     <h1>Vodka</h1>
     <VodkaCocktails />
-    <button className="button is-danger is-light"><Link to="/allvodka">{"Show all Vodka cocktails"}</Link></button>
+    <span className="link"><button className="button is-danger is-light"><Link to="/allvodka">{"All Vodka Cocktails"}</Link></button></span>
     
     <h1>Tequila</h1>
     <TequilaCocktails />
-    <button className="button is-danger is-light"><Link to="/alltequila">{"Show all Tequila cocktails"}</Link></button>
-
+    <span className="link"><button className="button is-danger is-light"><Link to="/alltequila">{"All Tequila Cocktails"}</Link></button></span>
   </div>
   
 }
