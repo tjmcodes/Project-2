@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, useParams } from "react-router-dom"
-import ModalVideos from "./ModalVideos"
+// import ModalVideos from "./ModalVideos"
+import RumModalVideo from "./RumModalVideo"
 
 
 function MusicMood() {
@@ -46,6 +47,10 @@ function MusicMood() {
     return <p>Cocktail Loading...</p>
   }
 
+  // if (base === "Rum") {
+  //   return <p><RumModalVideo /></p>
+  // }
+
 
   return (
     <section className="section">
@@ -90,6 +95,9 @@ function MusicMood() {
                   > Like ❤️  </button>
                   <span className="tag is-light">Total likes: {likes}</span>
                 </div>
+                {/* <div className="container">
+                  <ModalVideos />
+                </div> */}
                 <hr />
               </div>
             </div>
@@ -99,9 +107,6 @@ function MusicMood() {
           <p>...loading</p>
         )}
         <button className="button is-danger is-light"><Link to="/" style={{ textDecoration: "none" }}>{"⬅ 🏠  Home"}</Link></button>
-        <div className="container">
-          <ModalVideos />
-        </div>
       </div>
     </section>
   )

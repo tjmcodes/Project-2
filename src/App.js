@@ -13,7 +13,7 @@ import AllGinCocktails from "./components/AllGinCocktails"
 import AllVodkaCocktails from "./components/AllVodkaCocktails"
 import AllTequilaCocktails from "./components/AllTequilaCocktails"
 import AllRumCocktails from "./components/AllRumCocktails"
-import ModalVideos from "./components/ModalVideos"
+// import ModalVideos from "./components/ModalVideos"
 import Wheel from "./components/Wheel"
 import RandomCocktail from "./components/RandomCocktail"
 
@@ -39,7 +39,7 @@ function App() {
         <Route path="allvodka" element={<AllVodkaCocktails />} />
         <Route path="tequilamodal" element={<TequilaModalVideo />} /> 
         <Route path="alltequila" element={<AllTequilaCocktails />}/>
-        <Route path="modal" element={<ModalVideos />}/>
+        {/* <Route path="modal" element={<ModalVideos />}/> */}
         <Route path="roulette" element={<Wheel />}/>
         <Route path="modal/cocktail/:base" element={<RandomCocktail />} />
 
