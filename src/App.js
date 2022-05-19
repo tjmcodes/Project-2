@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Navbar from "./components/NavBar"
 import ShowCocktail from "./components/ShowCocktail"
 import CocktailsList from "./components/CocktailsList"
-// import GinCocktails from "./components/GinCocktails"
+import GinModalVideo from "./components/GinModalVideo"
 // import RumCocktails from "./components/RumCocktails"
 // import VodkaCocktails from "./components/VodkaCocktails"
 // import TequilaCocktails from "./components/VodkaCocktails"
@@ -16,6 +16,7 @@ import AllRumCocktails from "./components/AllRumCocktails"
 import ModalVideos from "./components/ModalVideos"
 import Wheel from "./components/Wheel"
 import RandomCocktail from "./components/RandomCocktail"
+
 
 function App() {
   // ! 1) You need a router. You'll pretty always use BrowserRouter
@@ -29,7 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<CocktailsList />} />
         <Route path="cocktail/:cocktailId" element={<ShowCocktail />} />
-        {/* <Route path="gin" element={<GinCocktails />} /> */}
+        <Route path="ginmodal" element={<GinModalVideo />}/>
         <Route path="allgin" element={<AllGinCocktails />} />
         {/* <Route path="rum" element={<RumCocktails />}/> */}
         <Route path="allrum" element={<AllRumCocktails />}/>
