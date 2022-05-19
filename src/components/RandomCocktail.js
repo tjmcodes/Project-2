@@ -46,7 +46,6 @@ function MusicMood() {
     return <p>Cocktail Loading...</p>
   }
 
-
   return (
     <section className="section">
       <div className="container">
