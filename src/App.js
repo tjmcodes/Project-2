@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Navbar from "./components/NavBar"
 import ShowCocktail from "./components/ShowCocktail"
 import CocktailsList from "./components/CocktailsList"
-import GinCocktails from "./components/GinCocktails"
-import RumCocktails from "./components/RumCocktails"
-import VodkaCocktails from "./components/VodkaCocktails"
-import TequilaCocktails from "./components/VodkaCocktails"
+// import GinCocktails from "./components/GinCocktails"
+// import RumCocktails from "./components/RumCocktails"
+// import VodkaCocktails from "./components/VodkaCocktails"
+// import TequilaCocktails from "./components/VodkaCocktails"
 import AllGinCocktails from "./components/AllGinCocktails"
 import AllVodkaCocktails from "./components/AllVodkaCocktails"
 import AllTequilaCocktails from "./components/AllTequilaCocktails"
@@ -27,15 +27,15 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="cocktails/" element={<CocktailsList />} />
+        <Route path="/" element={<CocktailsList />} />
         <Route path="cocktail/:cocktailId" element={<ShowCocktail />} />
-        <Route path="gin" element={<GinCocktails />} />
+        {/* <Route path="gin" element={<GinCocktails />} /> */}
         <Route path="allgin" element={<AllGinCocktails />} />
-        <Route path="rum" element={<RumCocktails />}/>
+        {/* <Route path="rum" element={<RumCocktails />}/> */}
         <Route path="allrum" element={<AllRumCocktails />}/>
-        <Route path="vodka" element={<VodkaCocktails />}/>
+        {/* <Route path="vodka" element={<VodkaCocktails />}/> */}
         <Route path="allvodka" element={<AllVodkaCocktails />} />
-        <Route path="tequila" element={<TequilaCocktails />}/>
+        {/* <Route path="tequila" element={<TequilaCocktails />} /> */}
         <Route path="alltequila" element={<AllTequilaCocktails />}/>
         <Route path="modal" element={<ModalVideos />}/>
         <Route path="roulette" element={<Wheel />}/>

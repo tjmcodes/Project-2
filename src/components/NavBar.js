@@ -9,7 +9,7 @@ function Navbar() {
       <nav className="navbar is-danger">
         <div className="container">
           <div className="navbar-brand">
-            <Link to="cocktails" style={{ textDecoration: "none" }} className="navbar-item">
+            <Link to="/" style={{ textDecoration: "none" }} className="navbar-item">
               🏠 Home
             </Link>
             {/* <Link to="gin" className="navbar-item">
@@ -22,7 +22,7 @@ function Navbar() {
                 Vodka
             </Link> */}
             <Link to="roulette" style={{ textDecoration: "none" }} className="navbar-item">
-               🎰 Roulette
+              🎰 Roulette
             </Link>
           </div>
         </div>
