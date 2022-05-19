@@ -6,8 +6,13 @@ import Navbar from "./components/NavBar"
 import ShowCocktail from "./components/ShowCocktail"
 import CocktailsList from "./components/CocktailsList"
 // import GinCocktails from "./components/GinCocktails"
+<<<<<<< HEAD
 import VodkaVideo from "./components/VodkaModalVideo"
 // import VodkaCocktails from "./components/VodkaCocktails"
+=======
+import RumModalVideo from "./components/RumModalVideo"
+import TequilaModalVideo from "./components/TequilaModalVideo"
+>>>>>>> 795f0c8350f2feb38dbf3fc6b62247a78a45995e
 // import TequilaCocktails from "./components/VodkaCocktails"
 import AllGinCocktails from "./components/AllGinCocktails"
 import AllVodkaCocktails from "./components/AllVodkaCocktails"
@@ -32,11 +37,11 @@ function App() {
         <Route path="cocktail/:cocktailId" element={<ShowCocktail />} />
         {/* <Route path="gin" element={<GinCocktails />} /> */}
         <Route path="allgin" element={<AllGinCocktails />} />
-        {/* <Route path="rum" element={<RumCocktails />}/> */}
+        <Route path="rummodal" element={<RumModalVideo />}/>
         <Route path="allrum" element={<AllRumCocktails />}/>
         <Route path="vodkamodal" element={<VodkaVideo />}/> 
         <Route path="allvodka" element={<AllVodkaCocktails />} />
-        {/* <Route path="tequila" element={<TequilaCocktails />} /> */}
+        <Route path="tequilamodal" element={<TequilaModalVideo />} /> 
         <Route path="alltequila" element={<AllTequilaCocktails />}/>
         <Route path="modal" element={<ModalVideos />}/>
         <Route path="roulette" element={<Wheel />}/>
