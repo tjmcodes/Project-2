@@ -5,9 +5,14 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Navbar from "./components/NavBar"
 import ShowCocktail from "./components/ShowCocktail"
 import CocktailsList from "./components/CocktailsList"
+import GinModalVideo from "./components/GinModalVideo"
+// import RumCocktails from "./components/RumCocktails"
+// import GinCocktails from "./components/GinCocktails"
 import VodkaVideo from "./components/VodkaModalVideo"
+// import VodkaCocktails from "./components/VodkaCocktails"
 import RumModalVideo from "./components/RumModalVideo"
 import TequilaModalVideo from "./components/TequilaModalVideo"
+// import TequilaCocktails from "./components/VodkaCocktails"
 import AllGinCocktails from "./components/AllGinCocktails"
 import AllVodkaCocktails from "./components/AllVodkaCocktails"
 import AllTequilaCocktails from "./components/AllTequilaCocktails"
@@ -29,7 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<CocktailsList />} />
         <Route path="cocktail/:cocktailId" element={<ShowCocktail />} />
-        {/* <Route path="gin" element={<GinCocktails />} /> */}
+        <Route path="ginmodal" element={<GinModalVideo />}/>
         <Route path="allgin" element={<AllGinCocktails />} />
         <Route path="rummodal" element={<RumModalVideo />}/>
         <Route path="allrum" element={<AllRumCocktails />}/>
