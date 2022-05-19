@@ -1,7 +1,15 @@
 import React from "react"
 import { Link, useParams } from "react-router-dom"
+<<<<<<< HEAD
 // import ModalVideos from "./ModalVideos"
 import RumModalVideo from "./RumModalVideo"
+=======
+import ModalVideos from "./ModalVideos"
+import GinModalVideo from "./GinModalVideo"
+import VodkaModalVideo from "./VodkaModalVideo"
+import RumModalVideo from "./RumModalVideo"
+import TequilaModalVideo from "./TequilaModalVideo"
+>>>>>>> a203ca248db3a3816cf9419a7592e845d66397bd
 
 
 function MusicMood() {
@@ -47,10 +55,13 @@ function MusicMood() {
     return <p>Cocktail Loading...</p>
   }
 
+<<<<<<< HEAD
   // if (base === "Rum") {
   //   return <p><RumModalVideo /></p>
   // }
 
+=======
+>>>>>>> a203ca248db3a3816cf9419a7592e845d66397bd
 
   return (
     <section className="section">
@@ -88,6 +99,13 @@ function MusicMood() {
                 </h4>
                 <p>{randomCocktail.drinks[0].strInstructions}</p>
                 <br />
+                <div className="container">
+                  {/* <ModalVideos /> */}
+                  {base === "Gin" && <GinModalVideo />}
+                  {base === "Vodka" && <VodkaModalVideo />}
+                  {base === "Rum" && <RumModalVideo />}
+                  {base === "Tequila" && <TequilaModalVideo />}
+                </div>
                 <div className="card-footer">
                   <button
                     onClick={increaseLikes}
@@ -106,14 +124,10 @@ function MusicMood() {
         ) : (
           <p>...loading</p>
         )}
-<<<<<<< HEAD
-        <button className="button is-danger is-light"><Link to="/" style={{ textDecoration: "none" }}>{"⬅ 🏠  Home"}</Link></button>
-=======
         <button className="button is-danger is-light"><Link to="/cocktails" style={{ textDecoration: "none" }}>{"⬅ 🏠  Home"}</Link></button>
         <div className="container">
           <ModalVideos />
         </div>
->>>>>>> b7668f0c57b7c0aa601b55f144b84d4f648cb079
       </div>
     </section>
   )
