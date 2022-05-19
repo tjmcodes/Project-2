@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
 
-function VodkaVideo() {
+function VodkaModalVideo() {
   const [isHappyOpen, setHappyOpen] = useState(false);
 
   return (
@@ -26,4 +26,4 @@ function VodkaVideo() {
 
 }
 
-export default VodkaVideo
+export default VodkaModalVideo
