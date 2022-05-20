@@ -13,9 +13,44 @@ body, .navbar-item {
   font-family: 'Josefin Slab', serif;
 }
 
+
 .card-header-title{
   font-family: 'Josefin Slab', serif;
 }
+
+// Check responsiveness with card title / card size
+
+// .column {
+//   display: block;
+//   flex-basis: 0;
+//   flex-grow: 1;
+//   flex-shrink: 1;
+//   padding: 1.75rem;
+// }
+
+div.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.75rem;
+}
+
+.card-header-title {
+  // max-width: fit-content;
+  // font-family: 'Josefin Slab', serif;
+  // color: #363636;
+  display: flex;
+  max-height: 30px;
+  // font-weight: 700;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+// End of check responsiveness with card title / card size
+
+
 
 $pink: #ffb4a2;
 $title-color: #b5838d;
@@ -76,16 +111,29 @@ h3{
   
 }
 .result{
-  font-size: 50px;
-}
+  font-size: 40px;
+  color: #cdb4db;
 
-.buttons {
-  font-family: 'Courier New', Courier, monospace;
+}
+.home{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 20px;
 }
 
+// Button stying for video modals
+
+// .buttons {
+//   font-family: 'Courier New', Courier, monospace;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  margin: 24px;
+}
 
 .button.is-link {
   background-color: rgba(40, 10, 194, 0.5);
@@ -105,3 +153,4 @@ h3{
   background-color: rgba(255, 0, 0, 0.5);
   color: rgb(0, 0, 0);
 }
+

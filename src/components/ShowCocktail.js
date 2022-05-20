@@ -24,7 +24,6 @@ function ShowCocktail() {
       const resp = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${cocktailId}`)
       const data = await resp.json()
       setCocktail(data)
-      // console.log(cocktailId)
     } 
     fetchCocktail()
   }, [cocktailId])
@@ -32,9 +31,6 @@ function ShowCocktail() {
   if (!cocktail) {
     return <p>Cocktail Loading...</p>
   }
-  // console.log(cocktail, { cocktailId })
-
-
 
   return (
     <section className="section">
@@ -85,21 +81,14 @@ function ShowCocktail() {
         ) : (
           <p>...loading</p>
         )}
-        <button className="button is-danger is-light"><Link to="/" style={{ textDecoration: "none" }}>{"⬅  🏠  Home"}</Link></button>
+        <span className="home">
+          <button className="button is-danger is-light">
+            <Link to="/" style={{ textDecoration: "none" }}>{"⬅  🏠  Home"}</Link>
+          </button>
+        </span>
       </div>
     </section>
   )
-  //   <section className="section">
-  //   <div className="container">
-      
-  //   {/* return */}
-  // {/* name: {cocktail.drinks[0].strDrink}
-  // Image: {cocktail.drinks[0]strImageSource}
-  // ingredients: {strIngredient1}{strMeasure1}
-  // Recipe: {strInstructions}
-  //     <Link to="/cocktails">{"⬅ Back to all cocktails"}</Link> */}
-  //   </div>
-  // </section>
 }
 
 

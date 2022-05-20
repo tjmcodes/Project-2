@@ -11,13 +11,13 @@ function TequilaModalVideo() {
         channel="youtube"
         autoplay
         isOpen={isRockOpen}
-        videoId="abkTFDYv_cM"
+        videoId="B07yMnlmRkE"
         onClose={() => setRockOpen(false)}
       />
 
       <div className="buttons are-normal"> 
         <button className="button is-danger" onClick={() => setRockOpen(true)}>
-          Lets rock out! 🤘 🎸 🤘
+          Wanna dance? 🕺🏻
         </button>
       </div>
     </React.Fragment>

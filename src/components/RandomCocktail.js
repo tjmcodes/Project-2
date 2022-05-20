@@ -85,8 +85,8 @@ function MusicMood() {
                   <span className="headers">Instructions</span>
                 </h4>
                 <p>{randomCocktail.drinks[0].strInstructions}</p>
-                <br />
-                <div className="title is-4">
+                <hr />
+                <div className="modal-container">
                   {/* <ModalVideos /> */}
                   {base === "Gin" && <GinModalVideo />}
                   {base === "Vodka" && <VodkaModalVideo />}
@@ -108,7 +108,11 @@ function MusicMood() {
         ) : (
           <p>...loading</p>
         )}
-        <button className="button is-danger is-light"><Link to="/" style={{ textDecoration: "none" }}>{"⬅ 🏠  Home"}</Link></button>
+        <span className="home">
+          <button className="button is-danger is-light">
+            <Link to="/" style={{ textDecoration: "none" }}>{"⬅ 🏠  Home"}</Link>
+          </button>
+        </span>
       </div>
     </section>
   )
