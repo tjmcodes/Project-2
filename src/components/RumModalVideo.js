@@ -15,7 +15,7 @@ function RumModalVideo() {
         onClose={() => setRelaxOpen(false)}
       />
 
-      <div className="buttons are-large column"> 
+      <div className="buttons are-normal"> 
         <button className="button is-primary" onClick={() => setRelaxOpen(true)}>
         Click here to chill 🛀
         </button>

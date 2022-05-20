@@ -15,7 +15,7 @@ function TequilaModalVideo() {
         onClose={() => setRockOpen(false)}
       />
 
-      <div className="buttons are-large column"> 
+      <div className="buttons are-normal"> 
         <button className="button is-danger" onClick={() => setRockOpen(true)}>
           Lets rock out! 🤘 🎸 🤘
         </button>

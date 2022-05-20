@@ -15,7 +15,7 @@ function VodkaModalVideo() {
         onClose={() => setHappyOpen(false)}
       />
 
-      <div className="buttons are-large column">
+      <div className="buttons are-normal">
         <button className="button is-warning" onClick={() => setHappyOpen(true)}>
           Click here for a good sing-along 🎤
         </button>

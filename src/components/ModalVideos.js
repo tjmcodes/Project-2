@@ -22,7 +22,7 @@ function ModalVideos() {
           onClose={() => setSadOpen(false)}
         />
 
-        <div className="buttons are-large column"> 
+        <div className="buttons are-normal"> 
           <button className="button is-link" onClick={() => setSadOpen(true)}>
         Click here to listen to sad songs 😭
           </button>
@@ -38,7 +38,7 @@ function ModalVideos() {
           onClose={() => setSad2Open(false)}
         />
 
-        <div className="buttons are-large column"> 
+        <div className="buttons are-normal"> 
           <button className="button is-link" onClick={() => setSad2Open(true)}>
         Click here to sing along to sad songs 😭
           </button>
@@ -54,7 +54,7 @@ function ModalVideos() {
           onClose={() => setHappyOpen(false)}
         />
 
-        <div className="buttons are-large column"> 
+        <div className="buttons are-normal"> 
           <button className="button is-warning" onClick={() => setHappyOpen(true)}>
         Click here for a good sing-along 🎤
           </button>
@@ -70,7 +70,7 @@ function ModalVideos() {
           onClose={() => setRelaxOpen(false)}
         />
 
-        <div className="buttons are-large column"> 
+        <div className="buttons are-normal"> 
           <button className="button is-primary" onClick={() => setRelaxOpen(true)}>
         Click here to chill 🛀
           </button>
@@ -86,7 +86,7 @@ function ModalVideos() {
           onClose={() => setRockOpen(false)}
         />
 
-        <div className="buttons are-large column"> 
+        <div className="buttons are-normal"> 
           <button className="button is-danger" onClick={() => setRockOpen(true)}>
           Lets rock out! 🤘 🎸 🤘
           </button>
