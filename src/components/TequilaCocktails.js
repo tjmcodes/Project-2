@@ -19,7 +19,7 @@ function TequilaCocktails() {
 
   React.useEffect(() => {
     async function fetchMargarita() {
-      const resp = await fetch("https:/www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007");
+      const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007");
       const data = await resp.json();
       console.log(data);
       setMargarita(data);
