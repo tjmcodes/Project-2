@@ -29,7 +29,7 @@ function MusicMood() {
     fetchCocktail()
 
 
-    localStorage.getItem(`${cocktailName}`)
+    // localStorage.getItem(`${cocktailName}`)
   }, [base, cocktailName])
 
 
