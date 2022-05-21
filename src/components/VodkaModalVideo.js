@@ -11,13 +11,13 @@ function VodkaModalVideo() {
         channel="youtube"
         autoplay
         isOpen={isHappyOpen}
-        videoId="CHrR-0aOo24"
+        videoId="lmGbifOOOlU"
         onClose={() => setHappyOpen(false)}
       />
 
       <div className="buttons are-normal">
         <button className="button is-warning" onClick={() => setHappyOpen(true)}>
-          Click here for a good sing-along 🎤
+          Wanna party?? 💃🏽 
         </button>
       </div>
     </React.Fragment>
