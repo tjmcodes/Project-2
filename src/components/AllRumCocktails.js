@@ -10,7 +10,6 @@ function AllRumCocktails() {
     async function fetchCocktails() {
       const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Rum")     
       const data = await resp.json()
-      console.log(data)
       setRumCocktails(data)
     }
     fetchCocktails()
@@ -25,7 +24,6 @@ function AllRumCocktails() {
       <div className="cocktails">
         {rumCocktails ?
           rumCocktails.drinks.map((rumCocktail) => {
-            (console.log("yum", rumCocktail))
             return <Cocktail
               key={rumCocktail.idDrink}
               id={rumCocktail.idDrink}

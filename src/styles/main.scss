@@ -14,19 +14,11 @@ body, .navbar-item {
 }
 
 
-.card-header-title{
-  font-family: 'Josefin Slab', serif;
+.card-header-title {
+  font-family: "Josefin Slab", serif;
 }
 
 // Check responsiveness with card title / card size
-
-// .column {
-//   display: block;
-//   flex-basis: 0;
-//   flex-grow: 1;
-//   flex-shrink: 1;
-//   padding: 1.75rem;
-// }
 
 div.card-header {
   display: flex;
@@ -36,12 +28,8 @@ div.card-header {
 }
 
 .card-header-title {
-  // max-width: fit-content;
-  // font-family: 'Josefin Slab', serif;
-  // color: #363636;
   display: flex;
-  max-height: 30px;
-  // font-weight: 700;
+  max-height: 50px;
   justify-content: center;
   align-content: center;
   align-items: flex-start;
@@ -96,14 +84,23 @@ h3{
   font-size: 25px;
   color: #6d6875;
 }
+
+
 .card-header-title{
   font-family: 'Josefin Slab', serif;
-  font-size: 23px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+  .card-header-title{
+    font-family: 'Josefin Slab', serif;
+    font-size: 15px;
+  }    
 }
 
 .navbar-item{
   font-family:'Josefin Slab', serif;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .wheel{
@@ -131,14 +128,6 @@ h3{
   margin-top: 20px;
 }
 
-// Button stying for video modals
-
-// .buttons {
-//   font-family: 'Courier New', Courier, monospace;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
 
 .modal-container {
   display: flex;

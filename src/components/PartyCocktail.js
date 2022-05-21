@@ -2,14 +2,14 @@ import React from "react"
 import { useWindowSize } from "react-use"
 import Confetti from "react-confetti"
 
-function PartyConfetti() {
+// eslint-disable-next-line react/display-name
+export default () => {
   const { width, height } = useWindowSize()
   return (
     <Confetti
       width={width}
-      height={height} 
+      height={height}
+      gravity={0.2}
     />
   )
 }
-
-export default PartyConfetti

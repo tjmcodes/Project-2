@@ -13,7 +13,6 @@ function RumCocktails() {
     async function fetchPurePassionCocktail() {
       const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=178338")
       const data = await resp.json()
-      console.log(data)
       setPurePassionCocktail(data)
     }
     fetchPurePassionCocktail()
@@ -22,7 +21,6 @@ function RumCocktails() {
     async function fetchZombieCocktail() {
       const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=17241")
       const data = await resp.json()
-      console.log(data)
       setZombieCocktail(data)
     }
     fetchZombieCocktail()
@@ -31,7 +29,6 @@ function RumCocktails() {
     async function fetchDarkStormyCocktail() {
       const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=17211")
       const data = await resp.json()
-      console.log(data)
       setDarkStormyCocktail(data)
     }
     fetchDarkStormyCocktail()
@@ -40,7 +37,6 @@ function RumCocktails() {
     async function fetchSpice75Cocktail() {
       const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=178322")
       const data = await resp.json()
-      console.log(data)
       setSpice75Cocktail(data)
     }
     fetchSpice75Cocktail()

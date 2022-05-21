@@ -3,13 +3,14 @@ import React, { useState } from "react";
 import { Wheel } from "react-custom-roulette";
 import { Link } from "react-router-dom";
 // import { useWindowSize } from "react-use"
-import Confetti from "react-confetti";
+// import Confetti from "react-confetti";
+import PartyCocktail from "./PartyCocktail";
 
 const data = [
   { id: 1, option: "Gin", style: { backgroundColor: "#bde0fe" } },
   { id: 2, option: "Tequila", style: { backgroundColor: "#ffc8dd" } },
   { id: 3, option: "Vodka", style: { backgroundColor: "#cdb4db" } },
-  { id: 4, option: "Rum", style: { backgroundColor: "#fcf6bd" } },
+  { id: 4, option: "Rum", style: { backgroundColor: "#fcf6bd" } }
 ];
 
 // eslint-disable-next-line react/display-name
@@ -28,7 +29,7 @@ export default () => {
   return (
     <main>
       <section className="section">
-        {!initialState && !mustSpin ? <Confetti /> : ""}
+        {!initialState && !mustSpin ? <PartyCocktail /> : ""}
         <div className="container">
           <h1>Too much to choose from?</h1>
           <h3>Why not play a game of cocktail roulette to help!</h3>

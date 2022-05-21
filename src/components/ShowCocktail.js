@@ -11,12 +11,11 @@ function ShowCocktail() {
   function increaseLikes() {
     updateLikes(parseInt(likes) + 1)
     localStorage.setItem(`${cocktailId}`, (parseInt(likes)))
-    console.log(likes)
   }
 
   React.useEffect(() => {
     localStorage.setItem(`${cocktailId}`, (parseInt(likes)))
-  }, [likes, cocktailId]) // ! This will run whenever likes changes.
+  }, [likes, cocktailId]) 
 
 
   React.useEffect(() => {

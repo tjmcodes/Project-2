@@ -11,7 +11,6 @@ function TequilaCocktails() {
     async function fetchTequilaSunrise() {
       const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=13621");
       const data = await resp.json();
-      console.log(data);
       setTequilaSunrise(data);
     }
     fetchTequilaSunrise();
@@ -21,7 +20,6 @@ function TequilaCocktails() {
     async function fetchMargarita() {
       const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007");
       const data = await resp.json();
-      console.log(data);
       setMargarita(data);
     }
     fetchMargarita();
@@ -31,7 +29,6 @@ function TequilaCocktails() {
     async function fetchLongIsland() {
       const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=17204");
       const data = await resp.json();
-      console.log(data);
       setLongIsland(data);
     }
     fetchLongIsland();
@@ -41,7 +38,6 @@ function TequilaCocktails() {
     async function fetchVampiro() {
       const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=17217");
       const data = await resp.json();
-      console.log(data);
       setVampiro(data);
     }
     fetchVampiro();

@@ -11,7 +11,7 @@ function TequilaModalVideo() {
         channel="youtube"
         autoplay
         isOpen={isRockOpen}
-        videoId="B07yMnlmRkE"
+        videoId="MeBJJmyL3xQ"
         onClose={() => setRockOpen(false)}
       />
 

@@ -18,7 +18,7 @@ function GinModalVideo() {
 
       <div className="buttons are-normal"> 
         <button className="button is-link" onClick={() => setSadOpen(true)}>
-        Click here to sing along to sad songs 😭
+        Wanna cry? 😭
         </button>
       </div>
     </React.Fragment>

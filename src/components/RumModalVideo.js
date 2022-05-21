@@ -11,7 +11,7 @@ function RumModalVideo() {
         channel="youtube"
         autoplay
         isOpen={isRelaxOpen}
-        videoId="1OjTspCqvk8"
+        videoId="FHuYNjCmX90"
         onClose={() => setRelaxOpen(false)}
       />
 

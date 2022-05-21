@@ -13,7 +13,6 @@ function VodkaCocktails() {
         "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11009"
       );
       const data = await resp.json();
-      console.log(data);
       setMoscowMule(data);
     }
     fetchCocktails();
@@ -24,7 +23,6 @@ function VodkaCocktails() {
       const resp = await fetch(
         "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=17212");
       const data = await resp.json();
-      console.log(data);
       setEspressoMartini(data);
     }
     fetchCocktails();
@@ -34,7 +32,6 @@ function VodkaCocktails() {
     async function fetchCocktails() {
       const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=17196");
       const data = await resp.json();
-      console.log(data);
       setCosmo(data);
     }
     fetchCocktails();
@@ -46,7 +43,6 @@ function VodkaCocktails() {
         "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=12754"
       );
       const data = await resp.json();
-      console.log(data);
       setSexonthebeach(data);
     }
     fetchCocktails();

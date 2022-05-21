@@ -13,7 +13,6 @@ function GinCocktails() {
         "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=bramble"
       );
       const data = await resp.json();
-      console.log(data);
       setBramble(data);
     }
     fetchBramble();
@@ -24,7 +23,6 @@ function GinCocktails() {
       const resp = await fetch(
         "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=gimlet");
       const data = await resp.json();
-      console.log(data);
       setGimlet(data);
     }
     fetchGimlet();
@@ -34,7 +32,6 @@ function GinCocktails() {
     async function fetchNegroni() {
       const resp = await fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=negroni");
       const data = await resp.json();
-      console.log(data);
       setNegroni(data);
     }
     fetchNegroni();
@@ -46,7 +43,6 @@ function GinCocktails() {
         "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11005"
       );
       const data = await resp.json();
-      console.log(data);
       setDryMartini(data);
     }
     fetchDryMartini();
