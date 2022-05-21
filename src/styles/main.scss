@@ -48,6 +48,17 @@ div.card-header {
   flex-direction: column;
 }
 
+div.card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.75rem;
+}
+
+.likes {
+  display: flex;
+  justify-content: flex-end;
+}
 // End of check responsiveness with card title / card size
 
 

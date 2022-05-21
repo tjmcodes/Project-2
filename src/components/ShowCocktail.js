@@ -38,6 +38,7 @@ function ShowCocktail() {
         {cocktail ? (
           <div>
             <h2 className="title has-text-centered">{cocktail.drinks[0].strDrink} Recipe</h2>
+            <span className="likes"> {likes} ♡</span>   
             <hr />
             <div className="columns">
               <div className="column is-half">
@@ -72,7 +73,6 @@ function ShowCocktail() {
                     onClick={increaseLikes}
                     className={"button is-primary is-light"}
                   > Like ❤️ </button>
-                  <span className="tag is-light">Total likes: {likes}</span>
                 </div>
                 <hr />
               </div>

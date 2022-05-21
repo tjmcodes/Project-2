@@ -12,19 +12,19 @@ function MusicMood() {
   const { base } = useParams()
   const { cocktailName } = useParams()
   const [cocktail, setCocktail] = React.useState(undefined)
-  const [likes, updateLikes] = React.useState(0 + localStorage.getItem(`${cocktailName}`))
+  // const [likes, updateLikes] = React.useState(0 + localStorage.getItem(`${cocktailName}`))
   const [randomCocktail, setRandomCocktail] = React.useState(undefined)
 
 
-  function increaseLikes() {
-    updateLikes(parseInt(likes) + 1)
-    localStorage.setItem(`${cocktailName}`, (parseInt(likes)))
-    console.log(likes)
-  }
+  // function increaseLikes() {
+  //   updateLikes(parseInt(likes) + 1)
+  //   localStorage.setItem(`${cocktailName}`, (parseInt(likes)))
+  //   console.log(likes)
+  // }
 
-  React.useEffect(() => {
-    localStorage.setItem(`${cocktailName}`, (parseInt(likes)))
-  }, [likes, cocktailName]) // ! This will run whenever likes changes.
+  // React.useEffect(() => {
+  //   localStorage.setItem(`${cocktailName}`, (parseInt(likes)))
+  // }, [likes, cocktailName]) // ! This will run whenever likes changes.
 
   React.useEffect(() => {
     async function fetchCocktail() {
@@ -56,7 +56,7 @@ function MusicMood() {
         {cocktail ? (
           <div>
             <h2 className="title has-text-centered">{randomCocktail.drinks[0].strDrink}</h2>
-            {/* <p>{randomCocktail.drinks[0].strIngredient1}</p> */}
+            {/* <span className="likes"> {likes} ♡</span>             */}
             <hr />
             <div className="columns">
               <div className="column is-half">
@@ -93,13 +93,13 @@ function MusicMood() {
                   {base === "Rum" && <RumModalVideo />}
                   {base === "Tequila" && <TequilaModalVideo />}
                 </div>
-                <div className="card-footer">
+                {/* <div className="card-footer">
                   <button
                     onClick={increaseLikes}
                     className={"button is-primary is-light"}
                   > Like ❤️  </button>
-                  <span className="tag is-light">Total likes: {likes}</span>
-                </div>
+                  
+                </div> */}
                 <hr />
               </div>
             </div>
