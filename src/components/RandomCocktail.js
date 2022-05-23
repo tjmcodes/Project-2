@@ -19,9 +19,9 @@ function MusicMood() {
     async function fetchCocktail() {
       const resp = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${base}`)
       const data = await resp.json()
-      const random = data.drinks[Math.floor(Math.random() * data.drinks.length)]
+      const random = data.drinks[Math.floor(Math.random() * data.drinks.length)] // had to store random as a variable (inner scope) in order to use for setCocktail state.
       setCocktail(random)
-      const resp2 = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${random.idDrink}`)
+      const resp2 = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${random.idDrink}`) // this endpoint was able to use the id from the random variable (base ingredient)
       const data2 = await resp2.json()
       setRandomCocktail(data2)
 
