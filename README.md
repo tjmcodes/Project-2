@@ -144,4 +144,3 @@ and also includes the videoModal based on base ingredient:
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=tjmcodes&show_icons&theme=tokyonight)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tjmcodes&theme=tokyonight)
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=tjmcodes&repo=github-readme-stats)
