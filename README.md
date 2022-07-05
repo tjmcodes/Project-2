@@ -5,11 +5,11 @@
 
 ## Overview
 
-The second project of the software engineering immersive course at GA London, was to **build a React application** that consumes a **public API**.  The project was to be completed **as a team of three** in just over **one week**.
+The second project of the software engineering immersive course at GA London, was to **build a React application** that consumes a **public API**.  The project was to be completed **as a team of three** in just 48hrs over the course of the week.
 
 ### The App
 
-Cocktail Party App is an app built with React and makes use of RESTful APIs that allows the user to search for cocktails based on a based ingredient (Rum, Vodka, Gin, Tequila). The app also features a random cocktail generator with selected youTube playlist to list to once you have made your cocktail. 
+Cocktail Party App is an app built with React and makes use of RESTful APIs that allows the user to search for cocktails based on a base ingredient (Rum, Vodka, Gin, Tequila). The app also features a random cocktail generator and a video modal that plays suggested YouTube playlist based on the base ingredient.
 
 ---
 
@@ -127,6 +127,10 @@ and also includes the videoModal based on base ingredient:
 * SASS
 * Bulma
 
+**Productivity**
+* Excalidraw
+* Miro
+
 ---
 
 
@@ -137,3 +141,7 @@ and also includes the videoModal based on base ingredient:
 - [@wodnjsd] (https://github.com/wodnjsd)
 
 
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=tjmcodes&show_icons)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tjmcodes&theme)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=tjmcodes&repo=github-readme-stats)
