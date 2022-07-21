@@ -277,9 +277,10 @@ I learned a lot from listening to my team members as I was able to see different
 
 ## Authors
 
-- [@Robsness23] (https://github.com/Robsness23)
-- [@tjmcodes] (https://github.com/tjmcodes) 
-- [@wodnjsd] (https://github.com/wodnjsd)
+- [Jaewon Han](https://github.com/wodnjsd)
+- [Robyn Smith](https://github.com/Robsness23)
+- [Teresa Morini](https://github.com/tjmcodes) 
+
 
 
 <!-- Stats -->
