@@ -13,7 +13,7 @@
 2. [Planning](#planning)
 3. [API](#api)
 4. [Whiteboarding](#whiteboarding)
-5. [Technologies used](#tech-used)
+5. [Technologies Used](#tech-used)
 6. [Approach](#approach)
 7. [Feature One - Random Cocktail Generator](#feature-one)
 8. [Feature Two - Showing the Selected Random Drink](#feature-two)
