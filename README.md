@@ -92,7 +92,7 @@ Once we were able to try out the different endpoints that we wanted to work with
 
 <div id='tech-used'></div>
 
-## Technolgies Used
+## Technologies Used
 * HTML5
 * JavaScript (ES6)
 * Node.js
