@@ -24,6 +24,7 @@
 13. [Bugs](#bugs)
 14. [Future Improvements](#future-improvements)
 15. [What have I learned?](#What-have-i-learned)
+16. [Authors](#authors)
  
 <div id='projectoverview'></div>
 
@@ -272,6 +273,7 @@ I learned a lot from listening to my team members as I was able to see different
 
 ---
 
+<div id='authors'></div>
 
 ## Authors
 
