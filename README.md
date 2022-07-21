@@ -16,12 +16,14 @@
 5. [Technologies used](#tech-used)
 6. [Approach](#approach)
 7. [Feature One - Random Cocktail Generator](#feature-one)
-8. [Feature Two - Video Modal](#feature-two)
-9. [Wins](#wins)
-10. [Challenges](#challenges)
-11. [Bugs](#bugs)
-12. [Future Improvements](#future-improvements)
-13. [What have I learned?](#What-have-i-learned)
+8. [Feature Two - Showing the Selected Random Drink](#feature-two)
+9. [Feature Three - Likes](#feature-three)
+10. [Individual Contributions](#individual)
+11. [Wins](#wins)
+12. [Challenges](#challenges)
+13. [Bugs](#bugs)
+14. [Future Improvements](#future-improvements)
+15. [What have I learned?](#What-have-i-learned)
  
 <div id='projectoverview'></div>
 
@@ -78,6 +80,7 @@ Initially, we wanted to make a movie React app (inspied by Netflix). However, wh
 ---
 
 <div id='whiteboarding'></div>
+
 ## Whiteboarding
 
 Once we were able to try out the different endpoints that we wanted to work with using insomnia, we went back to the drawing board in Excalidraw to decide on the user story and started wireframing. 
@@ -190,6 +193,32 @@ and also includes the videoModal based on the base ingredient:
  <a href="https://ibb.co/PQ9qqtk"><img src="https://i.ibb.co/WtPmmsC/Cocktail-App-Selected-random-drink.png" alt="Cocktail-App-Selected-random-drink" border="0"></a>
 </div>
 
+
+<div id='feature-three'></div>
+ 
+## Feature Three - Likes 
+
+Local storage = When passed a key name of `{cocktailId}`, this will return that key's value and add a count to that cocktail's ❤️ 
+
+```js
+function ShowCocktail() {
+
+  const { cocktailId } = useParams()
+  const [cocktail, setCocktail] = React.useState(undefined)
+  const [likes, updateLikes] = React.useState(0 + localStorage.getItem(`${cocktailId}`))
+
+  function increaseLikes() {
+    updateLikes(parseInt(likes) + 1)
+    localStorage.setItem(`${cocktailId}`, (parseInt(likes)))
+  }
+
+  React.useEffect(() => {
+    localStorage.setItem(`${cocktailId}`, (parseInt(likes)))
+  }, [likes, cocktailId]) 
+```
+
+
+
 <div id='individual'></div>
  
 ## Individual contribution
@@ -220,7 +249,7 @@ Upon researching libraries, we struggled to implement the carousel library in ti
 ## BUGS:
 Once the app was deployed, we noticed that on the mobile app and using safari as a web browser, the roulette wheel does not work. We didn’t really have time to test the bugs but moving forward, I have learned to make time for this!
 
-Implementing the likes on the recipe card was scrapped for the deployment and presentation, due to it not displaying correctly. In future it would be good to debug this and include so that it is consistent with the ‘ShowCocktail’ page. 
+Implementing the 'likes' functionaility on the recipe card was scrapped for the deployment and presentation, due to it not displaying correctly. In future it would be good to debug this and include so that it is consistent with the ‘ShowCocktail’ page. 
 
 <div id='future-improvements'></div>
 
