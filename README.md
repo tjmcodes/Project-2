@@ -1,5 +1,11 @@
 
-### ![GA](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png) General Assembly - Software Engineering Immersive
+<div align="right">
+ <h2>General Assembly - Software Engineering Immersive
+ <img width=35px src="https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png" />
+  </h2>
+</div>
+
+ 
 # Cocktail Party App 🍸
  
 
@@ -13,7 +19,7 @@ Cocktail Party App is an app built with React and makes use of RESTful APIs that
 
 ---
 
-## DEMO of App 
+## DEMO of the App 
 URL: https://main--ephemeral-salmiakki-7db874.netlify.app/
 
 ---
@@ -141,6 +147,12 @@ and also includes the videoModal based on base ingredient:
 - [@wodnjsd] (https://github.com/wodnjsd)
 
 
+<!-- Stats -->
+<div align='center'>
+ <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tjmcodes&theme=vue-dark&custom_title=Languages&layout=compact">
+ <img height="150em" src="https://github-readme-stats.vercel.app/api?username=tjmcodes&show_icons&theme=tokyonight">
+</div>
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=tjmcodes&show_icons&theme=tokyonight)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tjmcodes&theme=tokyonight)
+
+
+ 
