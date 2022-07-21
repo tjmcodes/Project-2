@@ -232,7 +232,8 @@ When clicking on a cocktail - include the video modal based on the base ingredie
  
 <div id='wins'></div>
  
-## WINS: 
+## Wins
+
 A highlight was to achieve the stretch goal of being able to display a random cocktail generator which added to the user experience. 
 Being able to integrate the libraries by importing them into the parent component worked seamlessly. After that we started to explore other libraries that could enhance the user experience, such as the confetti library which gives a sense of celebration ocne that random drink has been selected.
 
@@ -240,20 +241,21 @@ Having spent some time on the styling, I spent a bit of time trying to make the 
 
 <div id='challenges'></div> 
  
-## CHALLENGES:
+## Challenges
 Upon researching libraries, we struggled to implement the carousel library in time for the deadline as we could not seem to find one that suited the needs for what we were after. Had we had more time, we could have looked at amending some of the properties to customise further to suit our needs. 
 
 
 <div id='bugs'></div>
 
-## BUGS:
+## Bugs
+
 Once the app was deployed, we noticed that on the mobile app and using safari as a web browser, the roulette wheel does not work. We didn’t really have time to test the bugs but moving forward, I have learned to make time for this!
 
 Implementing the 'likes' functionaility on the recipe card was scrapped for the deployment and presentation, due to it not displaying correctly. In future it would be good to debug this and include so that it is consistent with the ‘ShowCocktail’ page. 
 
 <div id='future-improvements'></div>
 
-## FUTURE IMPROVEMENTS:
+## Future Improvements
 
 - Functionality for users to access all their favourite cocktails that they have ‘liked’ and have it showing on a page for them to browse. 
 - Enhanced filter and search functionality that allows users to select from a multiple choice form, stating what ingredients they currently have. 
@@ -262,7 +264,7 @@ Implementing the 'likes' functionaility on the recipe card was scrapped for the 
 <div id='what-did-i-learn'></div>
 
  
-## WHAT DID I LEARN
+## What did I Learn?
 
 First time working as a small dev group was a success. I believe that the tasks we set ourselves were clear and our goals were achievable, including most of the stretch goals we set ourselves. Everybody was able to contribute as a group equally and had individual contributions which enhanced the app. Productivity apps proved to be useful and allowed a way for team members to refer to when working outside of scheduled group sessions. 
 I learned a lot from listening to my team members as I was able to see different perspectives and approaches to solving problems which enabled me to expand my troubleshooting toolset. I also learned the importance of tidying and styling as we code. Which admittedly, I did not really think it would take that much time to do but realised as there was more data being displayed on the page, inconsistencies started to show. I realise that there was a cut-off time for implementing stretch goals for extra functionalities and instead focused on the styling so that it would be presentable for deployment. 
